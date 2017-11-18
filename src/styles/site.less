@@ -1,0 +1,97 @@
+// Imports
+@import "contact.less";
+@import "hero.less";
+@import "nav.less";
+@import "reset.less";
+@import "work.less";
+
+// Variables
+@link-color: #24AEEC;
+@small: ~"screen and (max-width: 800px)";
+
+// Global styling
+html {
+  font-family: 'Work Sans', sans-serif;
+  overflow-y: scroll;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+p {
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  color: #9FCF2C;
+  font-size: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+// Page styling
+.page {
+  margin-top: 45px;
+
+  .page-content {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 1em auto 0;
+    width: 70%;
+  }
+
+  &.fluid .page-content {
+    margin: auto;
+    width: 100%;
+  }
+
+  .page-cover {
+    height: 200px;
+
+    .page-title {
+      background-color: rgba(0, 0, 0, 0.7);
+      font-size: 30px;
+      font-weight: bold;
+      padding: 1em 2em;
+      text-align: center;
+    }
+  }
+}
+
+// About page
+.shea-waterski-img {
+  float: left;
+  margin: 0 5% 10% 0;
+  width: 30%;
+
+  @media @small {
+    display: block;
+    float: none;
+    margin: auto;
+    width: 70%;
+  }
+}
+
+// Gallery
+.gallery-title {
+  text-align: center;
+}

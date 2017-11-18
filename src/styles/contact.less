@@ -1,0 +1,80 @@
+@small: ~"screen and (max-width: 800px)";
+
+.contact-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  a {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 175px;
+    margin: 0 20px;
+    transition: 0.3s;
+    width: 175px;
+
+    @media @small {
+      height: 100px;
+      margin: 0 15px 50px;
+      width: 100px;
+    }
+
+    & > .contact-inner {
+      margin: 185px 0 0;
+      text-align: center;
+      transition: 0.3s;
+      width: 175px;
+
+      @media @small {
+        margin: 110px 0 0;
+        width: 100px;
+      }
+
+      &:hover {
+        color: #56768d;
+        transition: 0.3s;
+      }
+    }
+
+    &:hover {
+      transition: 0.3s;
+    }
+
+    &.GitHub {
+      background-image: url("../media/contact/GitHub.png");
+
+      &:hover {
+        background-image: url("../media/contact/GitHubActive.png");
+      }
+    }
+
+    &.Instagram {
+      background-image: url("../media/contact/Instagram.png");
+
+      &:hover {
+        background-image: url("../media/contact/InstagramActive.png");
+      }
+    }
+
+    &.LinkedIn {
+      background-image: url("../media/contact/LinkedIn.png");
+
+      &:hover {
+        background-image: url("../media/contact/LinkedInActive.png");
+      }
+    }
+
+    &.Mail {
+      background-image: url("../media/contact/Mail.png");
+
+      &:hover {
+        background-image: url("../media/contact/MailActive.png");
+      }
+    }
+  }
+
+  @media @small {
+    flex-wrap: wrap;
+  }
+}
