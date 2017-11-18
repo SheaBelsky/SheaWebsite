@@ -43,7 +43,7 @@ export default function () {
                     <div className="work-pic">
                     </div>
                     <div className="work-desc">
-                        <h2>Design and Technology Initiative</h2>
+                        <h2>Cornell Design and Technology Initiative</h2>
                         <h3>Executive Vice President for Front End Development</h3>
                         <a href="http://cornelldti.org" target="_blank">Cornell DTI</a> is a group of students who are passionate about
                         making a change in our community through design and technology. As EVP of Front End Development,
