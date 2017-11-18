@@ -5,19 +5,19 @@ import React from "react";
 import PageTemplate from "./../includes/PageTemplate";
 
 // Image imports
-const Bebee         = require("../../media/photography/Bebee.jpg");
-const CornellHealth = require("../../media/photography/CornellHealth.jpg");
-const Fall          = require("../../media/photography/Fall.jpg");
-const Freedom       = require("../../media/photography/Freedom.jpg");
-const Gates         = require("../../media/photography/Gates.jpg");
-const Horse         = require("../../media/photography/Horse.jpg");
-const Jersey        = require("../../media/photography/Jersey.jpg");
-const KirkLake      = require("../../media/photography/KirkLake.jpg");
-const Red           = require("../../media/photography/Red.jpg");
-const Slope         = require("../../media/photography/Slope.jpg");
-const Subway        = require("../../media/photography/Subway.jpg");
-const Taughannock   = require("../../media/photography/Taughannock.jpg");
-const TowerRoad     = require("../../media/photography/TowerRoad.jpg");
+import Bebee         from "../../media/photography/Bebee.jpg";
+import CornellHealth from "../../media/photography/CornellHealth.jpg";
+import Fall          from "../../media/photography/Fall.jpg";
+import Freedom       from "../../media/photography/Freedom.jpg";
+import Gates         from "../../media/photography/Gates.jpg";
+import Horse         from "../../media/photography/Horse.jpg";
+import Jersey        from "../../media/photography/Jersey.jpg";
+import KirkLake      from "../../media/photography/KirkLake.jpg";
+import Red           from "../../media/photography/Red.jpg";
+import Slope         from "../../media/photography/Slope.jpg";
+import Subway        from "../../media/photography/Subway.jpg";
+import Taughannock   from "../../media/photography/Taughannock.jpg";
+import TowerRoad     from "../../media/photography/TowerRoad.jpg";
 
 const images = [
     {
