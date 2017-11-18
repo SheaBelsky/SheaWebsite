@@ -19,7 +19,7 @@ export default function () {
                 <strong> User Experience</strong> and <strong>minoring in Education</strong>. My most recent internship
                 was with <strong>IBM Watson</strong> in New York, NY, developing applications using the Watson Developer
                 Cloud services and APIs. At Cornell, I am the <strong>Recruitment Director</strong> for Slope Day, the
-                <strong>Executive Vice President</strong> of Front-End Development for Cornell Design & Technology Initiative,
+                <strong> Executive Vice President</strong> of Front-End Development for Cornell Design & Technology Initiative,
                 and <strong>Advisor</strong> for Science Olympiad at Cornell.
             </p>
             <p>
