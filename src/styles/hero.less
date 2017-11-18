@@ -1,0 +1,42 @@
+// Home Page hero, and regular page heroes
+.hero-image, .page-cover {
+  align-items: center;
+  display: flex !important;
+  justify-content: center;
+  width: 100%;
+
+  & > div.hero-image-subtitle, & > .page-title {
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    display: block;
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+// Home Page hero specific styles
+.hero-image {
+  background: url("../media/Shea_Homepage.jpg") 0 60%;
+  background-size: cover;
+  height: 100vh;
+
+  & > div.hero-image-subtitle {
+    font-size: 50px;
+    height: 200px;
+    line-height: 150px;
+    width: 400px;
+
+    & > .hero-image-subtitle-inner {
+      font-size: 20px;
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: 400px) {
+  .hero-image-subtitle {
+    height: 200px;
+  }
+}
