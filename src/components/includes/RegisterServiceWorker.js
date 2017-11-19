@@ -34,7 +34,7 @@ export default function register() {
         window.addEventListener('load', () => {
             const swUrl = `${PUBLIC_URL}/build/service-worker.js`;
 
-            console.log(PUBLIC_URL, publicUrl, swURL);
+            console.log(PUBLIC_URL, publicUrl, swUrl);
 
             console.log(isLocalhost);
 
