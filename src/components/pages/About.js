@@ -33,7 +33,7 @@ export default function () {
             <p>
                 Ultimately, it's my goal to be a part of the design process for something that people <strong>want to use
                 and enjoy using.</strong> If people dislike using or interacting with something I've worked on, I try to
-                <strong>figure out what's going on and how it can be improved</strong>, no matter where in the design process
+                <strong> figure out what's going on and how it can be improved</strong>, no matter where in the design process
                 it is. <strong>I take pride in what I do.</strong> I don't develop or design things that I don't have faith
                 and confidence in.
             </p>
