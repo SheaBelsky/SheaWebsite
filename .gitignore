@@ -41,3 +41,6 @@ dist
 
 # Webstorm Folder
 .idea
+
+# Mac OS X
+.DS_Store
