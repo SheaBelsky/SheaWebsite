@@ -8,6 +8,7 @@ import PageTemplate from "./../includes/PageTemplate";
 export default function () {
     return (
         <PageTemplate fluid={true} pageCoverImage={"Adirondack.jpg"} title={"Work"}>
+            <div></div>
             <Fade big className="work" delay={0} duration={800} id="ibm">
                 <div className="work-container">
                     <div className="work-pic">
@@ -18,7 +19,7 @@ export default function () {
                         <p>
                             <u>Summer 2016:</u> Implemented functionality for user input through speech for the
                             <a href="https://conversation-demo.mybluemix.net/"> Watson Conversation demo app</a>.
-                            Check out the <a href="/watson" target="_blank">presentation I gave</a> on how Watson Conversation works!
+                            {/*Check out the <a href="/watson" target="_blank">presentation I gave</a> on how Watson Conversation works!*/}
                         </p>
                         <p>
                             <u>Summer 2017:</u> With the Advanced Client Technology & Solutions team, I developed a video
@@ -32,7 +33,10 @@ export default function () {
                     <div className="work-desc">
                         <h2>Ezra Tech</h2>
                         <h3>Chief Information Officer & Chief Technology Officer</h3>
-                        <a href="https://www.ezratech.us" target="_blank">Ezra Tech</a> is a full-stack solution for Science Olympiad event management. Created & maintain client experience and server-side processing to aid tournament organizers, coaches, and participants with event logistics. Made with Node.js, Express.js, MongoDB, PugJS, and Semantic UI.
+                        <a href="https://www.ezratech.us" target="_blank">Ezra Tech</a> is a full-stack solution for Science
+                        Olympiad event management. Created & maintain client experience and server-side processing to aid
+                        tournament organizers, coaches, and participants with event logistics. Made with Node.js, Express.js,
+                        MongoDB, PugJS, and Semantic UI.
                     </div>
                     <div className="work-pic">
                     </div>
