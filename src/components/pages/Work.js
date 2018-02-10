@@ -9,7 +9,7 @@ export default function () {
     return (
         <PageTemplate fluid={true} pageCoverImage={"Adirondack.jpg"} title={"Work"}>
             <div></div>
-            <Fade big className="work" delay={0} duration={800} id="ibm">
+            <div className="work"  id="ibm">
                 <div className="work-container">
                     <div className="work-pic">
                     </div>
@@ -27,8 +27,8 @@ export default function () {
 
                     </div>
                 </div>
-            </Fade>
-            <Fade big className="work" delay={0} duration={800} id="ezra">
+            </div>
+            <div className="work" id="ezra">
                 <div className="work-container">
                     <div className="work-desc">
                         <h2>Ezra Tech</h2>
@@ -41,8 +41,8 @@ export default function () {
                     <div className="work-pic">
                     </div>
                 </div>
-            </Fade>
-            <Fade big className="work" delay={0} duration={800} id="dti">
+            </div>
+            <div className="work" id="dti">
                 <div className="work-container">
                     <div className="work-pic">
                     </div>
@@ -55,8 +55,8 @@ export default function () {
                         interview potential front end developers, and onboard new project team members.
                     </div>
                 </div>
-            </Fade>
-            <Fade big className="work" delay={0} duration={800} id="brh">
+            </div>
+            <div className="work" id="brh">
                 <div className="work-container">
                     <div className="work-desc">
                         <h2>Big Red Hacks</h2>
@@ -70,8 +70,8 @@ export default function () {
                     <div className="work-pic">
                     </div>
                 </div>
-            </Fade>
-            <Fade big className="work" delay={0} duration={800} id="cornell">
+            </div>
+            <div className="work" id="cornell">
                 <div className="work-container">
                     <div className="work-pic">
                     </div>
@@ -109,12 +109,17 @@ export default function () {
                                     <td>Designing Technology for Social Impact</td>
                                     <td>Fall 16/17</td>
                                 </tr>
+                                <tr>
+                                    <td>INFO 4310</td>
+                                    <td>Interactive Information Visualization</td>
+                                    <td>Spring 18</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </Fade>
-            <Fade big className="work" delay={0} duration={800} id="slope">
+            </div>
+            <div className="work" id="slope">
                 <div className="work-container">
                     <div className="work-desc">
                         <h2>Slope Day Programming Board</h2>
@@ -132,8 +137,8 @@ export default function () {
                     <div className="work-pic">
                     </div>
                 </div>
-            </Fade>
-            <Fade big className="work" delay={0} duration={800} id="issa">
+            </div>
+            <div className="work" id="issa">
                 <div className="work-container">
                     <div className="work-pic">
                     </div>
@@ -152,7 +157,7 @@ export default function () {
                         to new and prospective Information Science students.
                     </div>
                 </div>
-            </Fade>
+            </div>
         </PageTemplate>
     );
 }
