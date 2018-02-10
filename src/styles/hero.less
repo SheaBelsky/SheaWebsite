@@ -35,8 +35,11 @@
 }
 
 // Mobile
-@media screen and (max-width: 400px) {
-  .hero-image-subtitle {
-    height: 200px;
+@media screen and (max-width: 800px) {
+  .hero-image {
+    & > div.hero-image-subtitle {
+      height: 100px;
+      line-height: 50px;
+    }
   }
 }

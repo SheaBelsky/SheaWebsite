@@ -43,9 +43,9 @@ export default class extends Component {
                         content= {"Photography"}
                     />
                     <a
-                        href={"/build/Shea-H-Belsky-Resume.pdf"}
-                        className={"nav-item"}
-                        target={"_blank"}>
+                        href=      {"/build/Shea-H-Belsky-Resume.pdf"}
+                        className= {"nav-item"}
+                        target=    {"_blank"}>
                         Resume
                     </a>
                     <MenuItem
