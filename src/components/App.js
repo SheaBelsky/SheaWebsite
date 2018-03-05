@@ -15,6 +15,18 @@ import Contact     from "./pages/Contact";
 import Photography from "./pages/Photography";
 import Work        from "./pages/Work";
 
+const consoleCSS = "background: #476174; color: white; font-family: Arial; padding: 5px 5px 5px 3px; border-radius: 5px; line-height: 20px;";
+
+console.log("%cHello there traveller!", consoleCSS);
+
+console.log("%cMy website's open source!", consoleCSS);
+
+console.log("%chttps://www.github.com/shbelsky/sheawebsite", consoleCSS);
+
+console.log("%cAnd may I offer you a gif in this troubling time?", consoleCSS);
+
+console.log("%chttps://i.imgur.com/MGG3Er1.gif", consoleCSS);
+
 export default function () {
     return (
         <BrowserRouter>
