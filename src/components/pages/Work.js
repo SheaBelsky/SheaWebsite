@@ -129,10 +129,7 @@ export default function () {
                     <div className="work-desc">
                         <h2>Information Science Student Association</h2>
                         <h3>Advisor (May 2017 - Present)</h3>
-                        Aid other executive board members of ISSA with event planning, presence, and other ISSA functions. Plan, organize, and collaborate with other CIS community organizations for a 
-                        <a href={"http://cornellsun.com/2017/11/07/pollack-addresses-increasing-enrollment-in-computer-science-classes/"}>
-                            guest talk by Cornell President Martha Pollack
-                        </a>.
+                        Aid other executive board members of ISSA with event planning, presence, and other ISSA functions. Plan, organize, and collaborate with other CIS community organizations for a <a href={"http://cornellsun.com/2017/11/07/pollack-addresses-increasing-enrollment-in-computer-science-classes/"}>guest talk by Cornell President Martha Pollack</a>.
                         <h3>President (December 2016 - May 2017)</h3>
                         Preside at general body and executive board meetings, assist event chairs with logistics such as food/room reservation, communicating with guests and faculty, and manage online presence. The President also interacts with members of faculty and staff to increase club presence, and provides outreach to new and prospective Information Science students.
                     </div>
