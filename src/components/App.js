@@ -15,7 +15,7 @@ import Contact     from "./pages/Contact";
 import Photography from "./pages/Photography";
 import Work        from "./pages/Work";
 
-const consoleCSS = "background: #476174; color: white; font-family: Arial; padding: 5px 5px 5px 3px; border-radius: 5px; line-height: 20px;";
+const consoleCSS = "background:#476174;color:white;font-family:Arial;padding:5px 5px 5px 3px;border-radius:5px;line-height:20px;";
 
 console.log("%cHello there traveller!", consoleCSS);
 
