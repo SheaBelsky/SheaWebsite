@@ -49,6 +49,7 @@ module.exports = {
     entry: `${__dirname}/src/index.js`,
     output: {
         path: `${__dirname}/docs`,
+        publicPath: "/",
         filename: "js/bundle.js",
     },
     module: {
@@ -86,7 +87,7 @@ module.exports = {
             {
                 test: /\.(ico|pdf)$/i,
                 use: [
-                    "file-loader?name=[name].[ext]"
+                    "file-loader?name=./img/[name].[ext]"
                 ]
             }
         ],

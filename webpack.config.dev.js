@@ -19,7 +19,7 @@ module.exports = {
     entry: `${__dirname}/src/index.js`,
     output: {
         path: `${__dirname}/docs`,
-        publicPath: "/docs/",
+        publicPath: "/",
         filename: "js/bundle.js",
     },
     devServer: {
