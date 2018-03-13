@@ -75,12 +75,24 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2|eot|ttf)$/,
-                loader: "url-loader?limit=100000&name=./css/[hash].[ext]"
+                use: [
+                    {
+                        loader: "url-loader?limit=100000",
+                        options: {
+                            name: "css/[hash].[ext]"
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 use: [
-                    "file-loader?limit=100000&name=./img/[hash].[ext]",
+                    {
+                        loader: "file-loader?limit=100000",
+                        options: {
+                            name: "img/[hash].[ext]"
+                        }
+                    },
                     "img-loader"
                 ]
             },
