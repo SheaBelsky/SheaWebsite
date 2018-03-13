@@ -7,7 +7,11 @@ import PageTemplate from "./../includes/PageTemplate";
 
 export default function () {
     return (
-        <PageTemplate fluid={true} pageCoverImage={"Adirondack.jpg"} title={"Work"}>
+        <PageTemplate 
+            fluid={true} 
+            pageCoverImage={"Adirondack.jpg"} 
+            title={"Work"}
+        >
             <div></div>
             <div className="work"  id="ibm">
                 <div className="work-container">

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Shea Belsky Personal Website",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open --port 3000",
-    "build": "webpack -p"
+    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",

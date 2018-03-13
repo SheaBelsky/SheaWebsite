@@ -1,5 +1,11 @@
-# Shea Belsky Portfolio
+# React Portfolio
 
-Coming soon to theaters near you
+Portfolio website for designers, developers, and everyone in between.
 
-Based off of [Single Page Apps for GitHub Pages](https://github.com/rafrex/spa-github-pages)
+Based off of [rafrex/react-github-pages](https://github.com/rafrex/react-github-pages).
+
+# What's under the hood?
+* Webpack configured and ready to rock
+* `webpack-dev-server` for developing locally and 
+* Service worker for assets like images and your resume
+* Page templates with header images
