@@ -12,8 +12,18 @@ export default function () {
             pageCoverImage={"Adirondack.jpg"} 
             title={"Work"}
         >
-            <div></div>
-            <div className="work"  id="ibm">
+            <div className="work" id="google">
+                <div className="work-container">
+                    <div className="work-desc">
+                        <h2>Google</h2>
+                        <h3>Incoming User Experience Engineering Intern</h3>
+                        I will be interning with Google during the summer of 2018, working as a User Experience Engineering Intern in their Mountain View campus.
+                    </div>
+                    <div className="work-pic">
+                    </div>
+                </div>
+            </div>
+            <div className="work" id="ibm">
                 <div className="work-container">
                     <div className="work-pic">
                     </div>
