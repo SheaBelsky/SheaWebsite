@@ -15,7 +15,7 @@ export default class extends Component {
                 title=          {"Photography"}
             >
                 <div id={"instafeed"}>
-                    <a href={"https://instagram.com/shbelsky"}>Follow me on Instagram!</a>
+                    <a href={"https://instagram.com/sheabelsky"}>Follow me on Instagram!</a>
                     <Instafeed
                         limit=       '12'
                         ref=         'instafeed'
