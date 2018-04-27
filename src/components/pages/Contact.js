@@ -19,32 +19,39 @@ export default function () {
             <div>
                 <div className={"contact-container"}>
                     <a
-                        href=      {"https://github.com/shbelsky"}
+                        href=      {"mailto:sheabelsky@gmail.com"}
+                        className= {"Mail"}
+                        target=    {"_blank"}
+                    >
+                        <div className={"contact-inner"}>Email</div>
+                    </a>
+                    <a
+                        href=      {"https://github.com/SheaBelsky"}
                         className= {"GitHub"}
                         target=    {"_blank"}
                     >
                         <div className={"contact-inner"}>GitHub</div>
                     </a>
                     <a
-                        href=      {"https://instagram.com/shbelsky"}
-                        className= {"Instagram"}
-                        target=    {"_blank"}
-                    >
-                        <div className={"contact-inner"}>Instagram</div>
-                    </a>
-                    <a
-                        href=      {"https://linkedin.com/in/sheabelsky"}
+                        href=      {"https://linkedin.com/in/SheaBelsky"}
                         className= {"LinkedIn"}
                         target=    {"_blank"}
                     >
                         <div className={"contact-inner"}>LinkedIn</div>
                     </a>
                     <a
-                        href=      {"mailto:shb95@cornell.edu"}
-                        className= {"Mail"}
+                        href=      {"https://medium.com/@sheabelsky"}
+                        className= {"Medium"}
                         target=    {"_blank"}
                     >
-                        <div className={"contact-inner"}>Email</div>
+                        <div className={"contact-inner"}>Medium</div>
+                    </a>
+                    <a
+                        href=      {"https://twitter.com/sheabelsky"}
+                        className= {"Twitter"}
+                        target=    {"_blank"}
+                    >
+                        <div className={"contact-inner"}>Twitter</div>
                     </a>
                 </div>
             </div>
