@@ -57,7 +57,7 @@ export default function () {
                     <div className="work-pic">
                     </div>
                     <div className="work-desc">
-                        <h2>Cornell Design and Technology Initiative</h2>
+                        <h2>Cornell Design & Tech Initiative</h2>
                         <h3>Developer Lead</h3>
                         <a href="http://cornelldti.org" target="_blank">Cornell DTI</a> is a group of students who are passionate about, making a change in our community through design and technology. As Developer Lead, I coordinate front end developers across all DTI projects, aid individual projects on an ad-hoc basis, interview potential front end developers, and onboard new project team members.
                     </div>

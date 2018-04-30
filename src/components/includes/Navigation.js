@@ -1,6 +1,7 @@
 // Node module imports
 import React, { Component } from "react";
 import { NavLink }          from "react-router-dom";
+import NewWindow            from "../../media/NewWindow.png";
 
 const MenuItem = ({content, link}) => {
     return (
@@ -47,6 +48,7 @@ export default class extends Component {
                         className= {"nav-item"}
                         target=    {"_blank"}>
                         Resume
+                        <img src={NewWindow} className={"nav-new-window-icon"} />
                     </a>
                     <MenuItem
                         link=    {"/contact"}
