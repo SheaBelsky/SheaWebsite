@@ -3,8 +3,12 @@ import Fade                 from "react-reveal/Fade";
 import React, { Component } from "react";
 
 export default class extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render () {
-        const pageClass       = `page${this.props.fluid === true ? " fluid" : ""}`;
+        const pageClass       = `page${this.props.fluid === true ? " fluid" : ""} ${this.props.className}`;
         const pageCoverPhoto  = require(`../../media/${this.props.pageCoverImage}`);
         const pageCoverStyles = {
             background: `no-repeat center center url('${pageCoverPhoto}')`,

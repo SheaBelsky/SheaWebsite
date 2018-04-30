@@ -79,13 +79,26 @@ strong {
 }
 
 // About page
-.shea-waterski-img {
-  display: block;
-  margin: auto;
-  width: 40%;
+.about-container > .page-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  
+  .about-column {
+    width: 50%;
 
-  @media @small {
-    width: 60%;
+    @media @small {
+      width: 100%;
+    }
+  }
+  .shea-profile {
+    display: block;
+    margin: auto;
+    width: 95%;
+  
+    @media @small {
+      width: 60%;
+    }
   }
 }
 
