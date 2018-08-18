@@ -25,15 +25,19 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "docs"),
         historyApiFallback: true,
-        open: true
+        port: 3000,
     },
     devtool: "eval-source-map",
+    mode: "development",
     module: {
         rules: [
             {
                 test:    /\.js$/,
                 exclude: /node_modules/,
-                loader:  "babel-loader"
+                loader:  "babel-loader",
+                options: {
+                    "presets": ["@babel/preset-env", "@babel/preset-react"]
+                }
             },
             {
                 test:   /\.css$/,
