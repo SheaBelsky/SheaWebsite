@@ -13,11 +13,6 @@ const plugins = [
     new OptimizeCssAssetsPlugin({
         cssProcessorOptions: { discardComments: { removeAll: true } }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-        output: {
-            comments: false,
-        },
-    }),
     new SWPrecacheWebpackPlugin({
         cacheId: "shea-belsky-website",
         dontCacheBustUrlsMatching: /\.\w{8}\./,
@@ -52,12 +47,16 @@ module.exports = {
         publicPath: "/",
         filename: "js/bundle.js",
     },
+    mode: "production",
     module: {
         rules: [
             {
                 test:    /\.js$/,
                 exclude: /node_modules/,
-                loader:  "babel-loader"
+                loader:  "babel-loader",
+                options: {
+                    "presets": ["@babel/preset-env", "@babel/preset-react"]
+                }
             },
             {
                 test:   /\.css$/,
@@ -103,6 +102,9 @@ module.exports = {
                 ]
             }
         ],
+    },
+    optimization: {
+        minimize: true
     },
     plugins: plugins
 };
