@@ -1,46 +1,49 @@
 // Node module imports
-import Fade from  "react-reveal/Fade";
+// import { Link } from "react-router-dom";
 import React from "react";
 
 // Include imports
-import PageTemplate from "./../includes/PageTemplate";
+import PageTemplate from "../includes/PageTemplate";
 
 export default function () {
     return (
-        <PageTemplate 
-            fluid={true} 
-            pageCoverImage={"Adirondack.jpg"} 
-            title={"Work"}
+        <PageTemplate
+            fluid
+            pageCoverImage="Adirondack.jpg"
+            title="Work"
         >
             <div className="work" id="google">
                 <div className="work-container">
                     <div className="work-desc">
                         <h2>Google</h2>
                         <h3>User Experience Engineering Intern</h3>
-                        I am interning with Google during the summer of 2018, working as a User Experience
-                        Engineering Intern in their Mountain View campus.
+                        <p>
+                            I worked with Google's Search and Assistant team during the Summer of
+                            2018 as a User Experience Engineering Intern. I worked on internal
+                            prototyping, design tools, and infrastructure for designers,
+                            researchers, and other User Experience Engineers.
+                        </p>
                     </div>
-                    <div className="work-pic">
-                    </div>
+                    <div className="work-pic" />
                 </div>
             </div>
             <div className="work" id="ibm">
                 <div className="work-container">
-                    <div className="work-pic">
-                    </div>
+                    <div className="work-pic" />
                     <div className="work-desc">
                         <h2>IBM Watson</h2>
                         <h3>Front End Web Developer Intern</h3>
                         <p>
                             <u>Summer 2016:</u> Implemented functionality for user input through speech
-                            for the <a href="https://conversation-demo.mybluemix.net/"> Watson Conversation 
+                            for the <a href="https://conversation-demo.mybluemix.net/"> Watson Conversation
                             demo app</a>.
-                            {/*Check out the <a href="/watson" target="_blank">presentation I gave</a> on how Watson Conversation works!*/}
+                            {/* Check out the <a href="/watson" target="_blank">presentation I gave</a> on how Watson Conversation works! */}
                         </p>
                         <p>
                             <u>Summer 2017:</u> With the Advanced Client Technology & Solutions team,
                             I developed a video summarization algorithm, API, and client using Watson
-                            Developer Cloud services and offerings.</p>
+                            Developer Cloud services and offerings.
+                        </p>
 
                     </div>
                 </div>
@@ -56,14 +59,12 @@ export default function () {
                         with event logistics. Made with Node.js, Express.js, MongoDB, PugJS, and Semantic
                         UI.
                     </div>
-                    <div className="work-pic">
-                    </div>
+                    <div className="work-pic" />
                 </div>
             </div>
             <div className="work" id="dti">
                 <div className="work-container">
-                    <div className="work-pic">
-                    </div>
+                    <div className="work-pic" />
                     <div className="work-desc">
                         <h2>Cornell Design & Tech Initiative</h2>
                         <h3>Former Developer Lead</h3>
@@ -81,27 +82,27 @@ export default function () {
                         <h2>Big Red Hacks</h2>
                         <h3>Web Team Lead</h3>
                         <a href="https://bigredhacks.com" target="_blank">Big Red Hacks</a> is Cornell
-                        University's first hackathon. As the Web Team Lead, I work with other team members 
+                        University's first hackathon. As the Web Team Lead, I work with other team members
                         to plan and implement essential functionality and software for our website.
                         I am also the first point of contact to address issues that are identified on
                         GitHub and in Slack. On the day of the event, I support hackers and event logistics
                         by resolving any critical website errors. I am currently leading a rebuild of
                         our website with React, PostgreSQL, Node.js, and Express.
                     </div>
-                    <div className="work-pic">
-                    </div>
+                    <div className="work-pic" />
                 </div>
             </div>
             <div className="work" id="cornell">
                 <div className="work-container">
-                    <div className="work-pic">
-                    </div>
+                    <div className="work-pic" />
                     <div className="work-desc">
                         <h2>Information Science Dept.</h2>
                         <h3>Teaching Assistant</h3>
-                        Responsibilities include holding walk-in office hours, grading student assignments, 
+                        Responsibilities include holding walk-in office hours, grading student assignments,
                         addressing questions using Piazza (online class management software) and teaching
-                        a 20-student discussion section (1300/2300).
+                        a 20-student discussion section (1300/2300). Head TA for 4340, aiding professor
+                        with syllabus and course development, organizing undergraduate TAs, and assisting
+                        in lectures.
                         <table id="ta-table">
                             <thead>
                                 <tr>
@@ -136,6 +137,11 @@ export default function () {
                                     <td>Interactive Information Visualization</td>
                                     <td>Spring 18</td>
                                 </tr>
+                                <tr>
+                                    <td>INFO 4340</td>
+                                    <td>User Experience and Software Development Studio</td>
+                                    <td>Fall 2018</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -158,22 +164,21 @@ export default function () {
                         other volunteer leads, and discussed logistics with the rest of the Slope Day
                         Programming Board.
                     </div>
-                    <div className="work-pic">
-                    </div>
+                    <div className="work-pic" />
                 </div>
             </div>
             <div className="work" id="issa">
                 <div className="work-container">
-                    <div className="work-pic">
-                    </div>
+                    <div className="work-pic" />
                     <div className="work-desc">
                         <h2>Information Science Student Association</h2>
                         <h3>Advisor (May 2017 - Present)</h3>
                         Aided other executive board members of ISSA with event planning, presence, and
                         other ISSA functions. Planned, organized, and collaborated with other CIS community
                         organizations for a
-                        <a href={"http://cornellsun.com/2017/11/07/pollack-addresses-increasing-enrollment-in-computer-science-classes/"}>
-                        guest talk by Cornell President Martha Pollack</a>.
+                        <a href="http://cornellsun.com/2017/11/07/pollack-addresses-increasing-enrollment-in-computer-science-classes/">
+                        guest talk by Cornell President Martha Pollack
+                        </a>.
                         <h3>President (December 2016 - May 2017)</h3>
                         Presided at general body and executive board meetings, assisted event chairs with
                         logistics such as food/room reservation, communicated with guests and faculty,

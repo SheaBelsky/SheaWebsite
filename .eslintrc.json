@@ -1,27 +1,20 @@
 {
-  "root": true,
-  "parser": "babel-eslint",
-  "env": {
-  "browser": true
-  },
+  "extends": "airbnb",
   "rules": {
-    "brace-style": ["error", "stroustrup"],
-    "indent": [
-      "error", 4, {
-        "SwitchCase": 1
-      }
-    ],
-    "no-multi-spaces": "off",
-    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
-    "no-plusplus": "off",
+    "indent": ["error", 4],
     "quotes": [
       "error", "double", {
         "allowTemplateLiterals": true
       }
     ],
     "react/forbid-prop-types": "off",
+    "react/jsx-boolean-value": "off",
     "react/jsx-filename-extension": "off",
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-one-expression-per-line": "off",
     "react/no-array-index-key": "off",
+    "react/no-unescaped-entities": "off",
     "semi": [
       "error", "always"
     ]
