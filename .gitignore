@@ -39,8 +39,9 @@ jspm_packages
 # Compiled source
 dist
 
-# Webstorm Folder
+# IDE Folder
 .idea
+.vscode
 
 # Mac OS X
 .DS_Store

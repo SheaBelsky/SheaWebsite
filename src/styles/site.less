@@ -1,3 +1,9 @@
+// Variables
+@base-color: #476174;
+@link-color: #c8c8c8;
+@link-color-active: white;
+@small: ~"screen and (max-width: 800px)";
+
 // Imports
 @import "contact.less";
 @import "hero.less";
@@ -5,12 +11,8 @@
 @import "reset.less";
 @import "work.less";
 
-// Variables
-@link-color: #24AEEC;
-@small: ~"screen and (max-width: 800px)";
-
 // Global styling
-html {
+#root {
   font-family: 'Work Sans', sans-serif;
   overflow-y: scroll;
 }
@@ -19,10 +21,6 @@ a {
   color: @link-color;
   text-decoration: none;
   transition: 0.3s;
-}
-
-p {
-  margin-top: 1em;
 }
 
 h1 {
@@ -37,6 +35,10 @@ h2 {
 h3 {
   color: #9FCF2C;
   font-size: 20px;
+}
+
+p {
+  margin-top: 1em;
 }
 
 strong {
@@ -87,6 +89,10 @@ strong {
   .about-column {
     width: 50%;
 
+    p:first-child {
+      margin-top: 0;
+    }
+
     @media @small {
       width: 100%;
     }
@@ -121,4 +127,23 @@ strong {
       width: 48%;
     }
   }
+}
+
+// Fade
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
 }

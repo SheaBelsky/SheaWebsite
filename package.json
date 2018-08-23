@@ -1,16 +1,16 @@
 {
   "name": "shea-belsky-website",
-  "version": "1.0.0",
-  "description": "Shea Belsky Personal Website",
+  "version": "1.1.0",
+  "description": "Shea Belsky Portfolio",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --progress",
     "build": "./node_modules/.bin/webpack --config webpack.config.prod.js --progress"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shbelsky/sheawebsite.git"
+    "url": "git+https://github.com/sheabelsky/sheawebsite.git"
   },
-  "author": "Shea Belsky <shb95@cornell.edu>",
+  "author": "Shea Belsky <sheabelsky@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
@@ -19,17 +19,17 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-instafeed": "^0.4.0",
-    "react-reveal": "^0.7.3",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-rc.1",
     "@babel/preset-env": "^7.0.0-rc.1",
     "@babel/preset-react": "^7.0.0-rc.1",
-    "babel-eslint": "^7.2.3",
     "babel-loader": "^8.0.0-beta.0",
     "css-loader": "^1.0.0",
     "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",

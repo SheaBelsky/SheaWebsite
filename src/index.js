@@ -1,9 +1,9 @@
 // Node Module imports
-import React             from "react";
-import ReactDOM          from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Component Imports
-import App                   from "./components/App";
+import App from "./components/App";
 import RegisterServiceWorker from "./components/includes/RegisterServiceWorker";
 
 // CSS Imports

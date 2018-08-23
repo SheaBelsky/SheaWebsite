@@ -1,31 +1,39 @@
 // Node module imports
-import Fade                 from "react-reveal/Fade";
 import React, { Component } from "react";
 
-export default class extends Component {
+class PageTemplate extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
     }
 
-    render () {
-        const pageClass       = `page${this.props.fluid === true ? " fluid" : ""} ${this.props.className}`;
-        const pageCoverPhoto  = require(`../../media/${this.props.pageCoverImage}`);
+    render() {
+        const {
+            children,
+            className,
+            fluid,
+            pageCoverImage,
+            title,
+        } = this.props;
+        const pageClass = `page${fluid === true ? " fluid" : ""} ${className}`;
+        const pageCoverPhotoURL = require(`../../media/${pageCoverImage}`);
         const pageCoverStyles = {
-            background: `no-repeat center center url('${pageCoverPhoto}')`,
-            backgroundSize: "cover"
+            background: `no-repeat center center url('${pageCoverPhotoURL}')`,
+            backgroundSize: "cover",
         };
 
         return (
-            <Fade className={pageClass} delay={0} duration={800} id="page-container">
-                <div className={"page-cover"} style={pageCoverStyles}>
-                    <div className={"page-title"}>
-                        {this.props.title}
+            <div className={pageClass} id="page-container">
+                <div className="page-cover" style={pageCoverStyles}>
+                    <div className="page-title">
+                        {title}
                     </div>
                 </div>
-                <div className={"page-content"}>
-                    {this.props.children}
+                <div className="page-content">
+                    {children}
                 </div>
-            </Fade>
+            </div>
         );
     }
 }
+
+export default PageTemplate;

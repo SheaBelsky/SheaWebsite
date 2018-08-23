@@ -2,43 +2,48 @@
 import React from "react";
 
 // Include imports
-import PageTemplate from "./../includes/PageTemplate";
+import PageTemplate from "../includes/PageTemplate";
 
 // Media
-import SheaSuit     from "./../../media/GoingGhostSmall.png";
+import SheaSuit from "../../media/GoingGhostSmall.png";
 
 export default function () {
     return (
         <PageTemplate
-            className={"about-container"}
-            pageCoverImage={"Slope.jpg"}
-            title={"About Me"}
+            className="about-container"
+            pageCoverImage="Slope.jpg"
+            title="About Me"
         >
-            <div className={"about-column"}>
-                <img src={SheaSuit} className={"shea-profile"} />
+            <div className="about-column">
+                <img src={SheaSuit} className="shea-profile" alt="Shea Belsky in a Pac-Man Suit" />
             </div>
-            <div className={"about-column"}>
+            <div className="about-column">
                 <p>
-                    Hi there! I'm Shea Belsky, an <strong>Information Science</strong> student at Cornell University,
-                    studying <strong> User Experience</strong> and <strong>minoring in Education</strong>.
-                    I'm interning with <strong>Google</strong> this summer as a <strong>User Experience
-                    Engineering Intern</strong>.
+                    Hi there! I'm Shea Belsky, a Master's student in Information Science at Cornell
+                    University, studying User Experience.
                 </p>
                 <p>
-                    My personal design philosophy considers <strong>everyone</strong> involved in the
-                    process of making web apps. Whether you are a developer, designer, or user on a
-                    site I've worked on, I try to <strong>make sure that your experience is enjoyable</strong>.
-                    <strong>Do you want</strong> to be on this website? <strong>Did you accomplish</strong>
-                    what you came here to do? Does everything <strong>make sense</strong> for you to
-                    understand or work with?
+                    I interned with Google during the summer of 2018 as a User Experience Engineering
+                    Intern. There, I worked on internal prototypes for the Assistant team, aiding designers
+                    and researchers in exploring the future of Google Assistant for Android.
                 </p>
                 <p>
-                    Ultimately, it's my goal to make something that people <strong>want to use and enjoy
-                    using.</strong> If people dislike using or interacting with something I've worked
-                    on, I try to <strong> figure out what's going on and how it can be improved</strong>,
-                    no matter where in the design process it is.
+                    My personal design philosophy considers everyone involved in the process of making
+                    software. Whether you are a developer, designer, researcher, or user on a project
+                    I've worked on, I try to make sure that your experience is enjoyable.
+                </p>
+                <p>
+                    Do you want to be on this website? Did you accomplish what you came here to do?
+                    Does everything make sense for you to understand or work with? Can you easily work
+                    with and change my code? If you're using my work in research, can you get meaningful
+                    information from it?
+                </p>
+                <p>
+                    Ultimately, it's my goal to make something that people want to use and enjoy using.
+                    If people dislike using or interacting with something I've worked on, I try to figure
+                    out what's going on and how it can be improved, no matter where in the design process it is.
                 </p>
             </div>
         </PageTemplate>
     );
-};
+}
