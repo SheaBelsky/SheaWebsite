@@ -4,11 +4,6 @@ import React from "react";
 // Include imports
 import PageTemplate from "../includes/PageTemplate";
 
-import GitHub from "../../media/contact/GitHub.png";
-import Instagram from "../../media/contact/Instagram.png";
-import LinkedIn from "../../media/contact/LinkedIn.png";
-import Mail from "../../media/contact/Mail.png";
-
 export default function () {
     return (
         <PageTemplate
