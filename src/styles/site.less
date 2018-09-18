@@ -121,12 +121,15 @@ strong {
 
 // Photography
 #instafeed {
+  // react-instafeed keeps duplicating images on the feed if the component is still loading, this gets around it
+  max-height: 1252px;
+  overflow-y: hidden;
+  text-align: center;
+
   a img {
     padding: 0.5% 1%;
     width: 30%;
   }
-
-  text-align: center;
 
   @media @small {
     a img {

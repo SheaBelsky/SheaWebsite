@@ -11,6 +11,7 @@ export default class extends Component {
 
         return (
             <PageTemplate
+                className="photography-container"
                 pageCoverImage="HunterSnow.jpg"
                 title="Photography"
             >
