@@ -1,0 +1,24 @@
+.photography-container.page {
+    #instafeed {
+        overflow-y: hidden;
+        text-align: center;
+    
+        a { 
+            img {
+                padding: 0.5% 1%;
+                width: 30%;
+            }
+    
+            // When the Instagram feed rerenders, it adds more images. This hides every image after the 12th image.
+            &:nth-child(1n+15) {
+                display: none;
+            }
+        }
+    
+        @media @small {
+            a img {
+            width: 48%;
+            }
+        }
+    }    
+}

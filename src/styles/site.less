@@ -5,11 +5,14 @@
 @small: ~"screen and (max-width: 800px)";
 
 // Imports
-@import "contact.less";
+@import "pages/about.less";
+@import "pages/photography.less";
+@import "pages/work.less";
+
 @import "hero.less";
+@import "footer.less";
 @import "nav.less";
 @import "reset.less";
-@import "work.less";
 
 // Global styling
 #root {
@@ -64,7 +67,6 @@ strong {
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin: 1em auto 0;
-    padding-bottom: 5%;
     width: 70%;
   }
 
@@ -86,33 +88,6 @@ strong {
   }
 }
 
-// About page
-.about-container > .page-content {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  
-  .about-column {
-    width: 50%;
-
-    p:first-child {
-      margin-top: 0;
-    }
-
-    @media @small {
-      width: 100%;
-    }
-  }
-  .shea-profile {
-    display: block;
-    margin: auto;
-    width: 95%;
-  
-    @media @small {
-      width: 60%;
-    }
-  }
-}
 
 // Gallery
 .gallery-title {
@@ -120,27 +95,11 @@ strong {
 }
 
 // Photography
-#instafeed {
-  // react-instafeed keeps duplicating images on the feed if the component is still loading, this gets around it
-  max-height: 1252px;
-  overflow-y: hidden;
-  text-align: center;
 
-  a img {
-    padding: 0.5% 1%;
-    width: 30%;
-  }
-
-  @media @small {
-    a img {
-      width: 48%;
-    }
-  }
-}
 
 // Fade
 .fade-enter {
-  opacity: 0.01;
+  opacity: 0;
 }
 
 .fade-enter.fade-enter-active {
@@ -153,6 +112,6 @@ strong {
 }
 
 .fade-exit.fade-exit-active {
-  opacity: 0.01;
+  opacity: 0;
   transition: opacity 500ms ease-in;
 }

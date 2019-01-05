@@ -10,7 +10,7 @@ export default function () {
         <PageTemplate
             className="work-container"
             fluid
-            pageCoverImage="Adirondack.jpg"
+            pageCoverImage="hunter.jpg"
             title="Work"
         >
             <div className="work" id="google">

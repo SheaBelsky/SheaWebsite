@@ -5,43 +5,30 @@ import React from "react";
 import PageTemplate from "../includes/PageTemplate";
 
 // Media
-import SheaSuit from "../../media/GoingGhostSmall.png";
+import headshot from "../../media/headshot.jpg";
 
 export default function () {
     return (
         <PageTemplate
             className="about-container"
-            pageCoverImage="Slope.jpg"
+            pageCoverImage="sunset.jpg"
             title="About Me"
         >
             <div className="about-column">
-                <img src={SheaSuit} className="shea-profile" alt="Shea Belsky in a Pac-Man Suit" />
+                <img src={headshot} className="shea-profile" alt="Shea Hunter Belsky headshot" />
             </div>
             <div className="about-column">
                 <p>
-                    Hi there! I'm Shea Belsky, a Master's student in Information Science at Cornell
-                    University, studying User Experience.
+                    Hi there! I'm Shea Hunter Belsky, a graduate of Cornell University's Information Science department. I hold a Masters of Professional Studies and Bachelor's of Science in Information Science (concentrating in User Experience), and a minor in Education.
                 </p>
                 <p>
-                    I interned with Google during the summer of 2018 as a User Experience Engineering
-                    Intern. There, I worked on internal prototypes for the Assistant team, aiding designers
-                    and researchers in exploring the future of Google Assistant for Android.
+                    I will be joining Wayfair as a Front-End Developer in March of 2019, working on their online storefront to improve customer experience and retention.
                 </p>
                 <p>
-                    My personal design philosophy considers everyone involved in the process of making
-                    software. Whether you are a developer, designer, researcher, or user on a project
-                    I've worked on, I try to make sure that your experience is enjoyable.
+                    I work at the intersection of design and technology, solving problems throughout the product design lifecycle. From user research to prototyping, software engineering and testing, I'm at home in developing products and applications at every step of the way.
                 </p>
                 <p>
-                    Do you want to be on this website? Did you accomplish what you came here to do?
-                    Does everything make sense for you to understand or work with? Can you easily work
-                    with and change my code? If you're using my work in research, can you get meaningful
-                    information from it?
-                </p>
-                <p>
-                    Ultimately, it's my goal to make something that people want to use and enjoy using.
-                    If people dislike using or interacting with something I've worked on, I try to figure
-                    out what's going on and how it can be improved, no matter where in the design process it is.
+                    In my free time, I love to snowski, waterski, run, practice photography and cooking, read, and go hiking.
                 </p>
             </div>
         </PageTemplate>

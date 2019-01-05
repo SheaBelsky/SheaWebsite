@@ -48,10 +48,6 @@ function Navigation() {
                     Resume
                     <img src={NewWindow} className="nav-new-window-icon" alt="New window icon" />
                 </a>
-                <MenuItem
-                    link="/contact"
-                    content="Contact"
-                />
             </div>
         </div>
     );
