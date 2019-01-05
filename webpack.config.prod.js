@@ -14,7 +14,7 @@ const plugins = [
         cssProcessorOptions: { discardComments: { removeAll: true } },
     }),
     new SWPrecacheWebpackPlugin({
-        cacheId: "shea-belsky-website-1.1",
+        cacheId: "shea-belsky-website-1.2",
         dontCacheBustUrlsMatching: /\.\w{8}\./,
         filename: "js/service-worker.js",
         logger(message) {

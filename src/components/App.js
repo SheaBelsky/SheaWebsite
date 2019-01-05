@@ -2,13 +2,20 @@
 import { createBrowserHistory } from "history";
 import React from "react";
 import {
-    Route, Router, Switch, withRouter,
+    Route, Router, Switch,
 } from "react-router-dom";
+import ReactCSSTransitionReplace from "react-css-transition-replace";
 
 // Routes
 import Navigation from "./includes/Navigation";
-import Routes from "./Routes";
 
+// Includes imports
+import Home from "./includes/HomeHero";
+
+// Page imports
+import About from "./pages/About";
+import Photography from "./pages/Photography";
+import Work from "./pages/Work";
 
 // Require these files so Webpack outputs them
 require("./../media/favicon.ico");
@@ -40,16 +47,39 @@ const initGA = (history) => {
 };
 initGA(customHistory);
 
+function SwitchContainer({ location }) {
+    return (
+        <Switch className="switch" location={location}>
+            <Route exact path="/" component={Home} />    {/* Home Page */}
+            <Route exact path="/about" component={About} />    {/* About Page */}
+            <Route exact path="/photography" component={Photography} /> {/* Photography Page */}
+            <Route exact path="/work" component={Work} />    {/* Work Page */}
+        </Switch>
+    );
+}
+
 function App() {
     return (
-        <div>
-            <Router history={customHistory}>
-                <div>
-                    <Navigation />
-                    <Routes />
-                </div>
-            </Router>
-        </div>
+        <Router history={customHistory}>
+            <div>
+                <Navigation />
+                <Route
+                    render={({ location }) => (
+                        <ReactCSSTransitionReplace
+                            transitionName="fade"
+                            transitionEnterTimeout={500}
+                            transitionLeaveTimeout={500}
+                        >
+                            <SwitchContainer
+                                className="switchContainer"
+                                location={location}
+                                key={location.pathname}
+                            />
+                        </ReactCSSTransitionReplace>
+                    )}
+                />
+            </div>
+        </Router>
     );
 }
 
