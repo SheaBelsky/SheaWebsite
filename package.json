@@ -1,6 +1,6 @@
 {
   "name": "shea-belsky-website",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Shea Belsky Portfolio",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --progress",
@@ -13,7 +13,6 @@
   "author": "Shea Belsky <sheabelsky@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "history": "^4.7.2",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
@@ -25,6 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
@@ -39,6 +39,7 @@
     "img-loader": "^3.0.1",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "raw-loader": "^1.0.0",
     "style-loader": "^0.23.1",

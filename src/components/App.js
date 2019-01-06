@@ -1,19 +1,20 @@
 // Node Module imports
 import { createBrowserHistory } from "history";
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import {
     Route, Router, Switch,
 } from "react-router-dom";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
 // Includes imports
+import AsyncComponent from "./includes/AsyncComponent";
 import Navigation from "./includes/Navigation";
 
-// Page imports
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Photography from "./pages/Photography";
-import Work from "./pages/Work";
+// Lazy import routes
+const About = lazy(() => import('./pages/About') );
+const Home = lazy(() => import('./pages/Home') );
+const Photography = lazy(() => import('./pages/Photography') );
+const Work = lazy(() => import('./pages/Work') );
 
 // Require these files so Webpack outputs them
 require("./../media/favicon.ico");
@@ -47,12 +48,14 @@ initGA(customHistory);
 
 function SwitchContainer({ location }) {
     return (
-        <Switch className="switch" location={location}>
-            <Route exact path="/" component={Home} />    {/* Home Page */}
-            <Route exact path="/about" component={About} />    {/* About Page */}
-            <Route exact path="/photography" component={Photography} /> {/* Photography Page */}
-            <Route exact path="/work" component={Work} />    {/* Work Page */}
-        </Switch>
+        <Suspense fallback={<div>Loading...</div>}>
+            <Switch className="switch" location={location}>
+                <Route exact path="/" render={props => <Home {...props} />} />    {/* Home Page */}
+                <Route exact path="/about" render={props => <About {...props} />} />    {/* About Page */}
+                <Route exact path="/photography" render={props => <Photography {...props} />} /> {/* Photography Page */}
+                <Route exact path="/work" render={props => <Work {...props} />} />    {/* Work Page */}
+            </Switch>
+        </Suspense>
     );
 }
 
@@ -63,17 +66,11 @@ function App() {
                 <Navigation />
                 <Route
                     render={({ location }) => (
-                        <ReactCSSTransitionReplace
-                            transitionName="fade"
-                            transitionEnterTimeout={500}
-                            transitionLeaveTimeout={500}
-                        >
-                            <SwitchContainer
-                                className="switchContainer"
-                                location={location}
-                                key={location.pathname}
-                            />
-                        </ReactCSSTransitionReplace>
+                        <SwitchContainer
+                            className="switchContainer"
+                            location={location}
+                            key={location.pathname}
+                        />
                     )}
                 />
             </div>
