@@ -7,7 +7,6 @@ import {
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
 // Includes imports
-import AsyncComponent from "./includes/AsyncComponent";
 import Navigation from "./includes/Navigation";
 
 // Lazy import routes

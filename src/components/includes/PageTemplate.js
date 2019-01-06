@@ -8,20 +8,18 @@ function PageTemplate(props) {
         children,
         className,
         fluid,
-        pageCoverImage,
+        subtitle,
         title,
     } = props;
     const pageClass = `page${fluid === true ? " fluid" : ""} ${className}`;
-    const pageCoverPhotoURL = require(`../../media/panoramas/${pageCoverImage}`);
-    const pageCoverStyles = {
-        background: `no-repeat center center url('${pageCoverPhotoURL}')`,
-        backgroundSize: "cover",
-    };
     return (
         <div className={pageClass} id="page-container">
-            <div className="page-cover" style={pageCoverStyles}>
+            <div className="page-cover">
                 <div className="page-title">
                     {title}
+                </div>
+                <div className="page-subtitle">
+                    {subtitle}
                 </div>
             </div>
             <div className="page-content">

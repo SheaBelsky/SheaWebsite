@@ -43,6 +43,7 @@ function Navigation() {
                 <a
                     href="/img/Shea-H-Belsky-Resume.pdf"
                     className="nav-item"
+                    rel="noopener noreferrer"
                     target="_blank"
                 >
                     Resume
