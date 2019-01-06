@@ -1,26 +1,38 @@
 @import "../variables.less";
 
 .photography-container.page {
-    #instafeed {
-        overflow-y: hidden;
-        text-align: center;
+    .page-content {
+        width: 70%;
+    }
+
+    .tile {
+        margin: 1em !important;
+    }
+    // #instafeed {
+    //     overflow-y: hidden;
+    //     text-align: center;
     
-        a { 
-            img {
-                padding: 0.5% 1%;
-                width: 30%;
-            }
+    //     a { 
+    //         img {
+    //             padding: 0.5% 1%;
+    //             width: 30%;
+    //         }
     
-            // When the Instagram feed rerenders, it adds more images. This hides every image after the 12th image.
-            &:nth-child(1n+15) {
-                display: none;
-            }
-        }
+    //         // When the Instagram feed rerenders, it adds more images. This hides every image after the 12th image.
+    //         &:nth-child(1n+15) {
+    //             display: none;
+    //         }
+    //     }
     
-        @media @small {
-            a img {
-            width: 48%;
-            }
-        }
-    }    
+    //     @media @small {
+    //         a img {
+    //         width: 48%;
+    //         }
+    //     }
+    // }
+    
+}
+
+div[class*='footerCount'] {
+    font-family: 'Work Sans', sans-serif;
 }

@@ -13,8 +13,9 @@ export default function () {
         <PageTemplate
             className="work-container"
             fluid
-            pageCoverImage="hunter.jpg"
-            title="Work"
+            pageCoverImage="gardens.jpg"
+            subtitle="Cue the Hamilton [WORK! WORK!] sound bite"
+            title="Work Experience"
         >
             <div className="work" id="google">
                 <div className="work-container">
