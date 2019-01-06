@@ -6,14 +6,12 @@ import {
 } from "react-router-dom";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
-// Routes
-import Navigation from "./includes/Navigation";
-
 // Includes imports
-import Home from "./includes/HomeHero";
+import Navigation from "./includes/Navigation";
 
 // Page imports
 import About from "./pages/About";
+import Home from "./pages/Home";
 import Photography from "./pages/Photography";
 import Work from "./pages/Work";
 

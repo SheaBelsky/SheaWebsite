@@ -7,6 +7,9 @@ import PageTemplate from "../includes/PageTemplate";
 // Media
 import headshot from "../../media/headshot.jpg";
 
+// CSS
+import "../../styles/pages/about.less";
+
 export default function () {
     return (
         <PageTemplate

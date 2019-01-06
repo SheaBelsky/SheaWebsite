@@ -1,17 +1,9 @@
 // Variables
-@base-color: #476174;
-@link-color: #c8c8c8;
-@link-color-active: white;
-@small: ~"screen and (max-width: 800px)";
+@import "variables.less";
 
 // Imports
-@import "pages/about.less";
-@import "pages/photography.less";
-@import "pages/work.less";
-
-@import "hero.less";
-@import "footer.less";
-@import "nav.less";
+@import "./includes/footer.less";
+@import "./includes/nav.less";
 @import "reset.less";
 
 // Global styling
@@ -87,15 +79,6 @@ strong {
     }
   }
 }
-
-
-// Gallery
-.gallery-title {
-  text-align: center;
-}
-
-// Photography
-
 
 // Fade
 .fade-enter {

@@ -5,6 +5,9 @@ import React from "react";
 // Include imports
 import PageTemplate from "../includes/PageTemplate";
 
+// CSS
+import "../../styles/pages/work.less";
+
 export default function () {
     return (
         <PageTemplate

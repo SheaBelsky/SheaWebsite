@@ -5,6 +5,9 @@ import Instafeed from "react-instafeed";
 // Include imports
 import PageTemplate from "../includes/PageTemplate";
 
+// CSS
+import "../../styles/pages/photography.less";
+
 function Photography() {
     const instafeedTarget = "instafeed";
 
