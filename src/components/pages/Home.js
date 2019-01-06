@@ -1,6 +1,9 @@
 // Node module imports
 import React from "react";
 
+// CSS
+import "../../styles/pages/home.less";
+
 export default function () {
     return (
         <div className="hero-image">

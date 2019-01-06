@@ -1,6 +1,7 @@
 {
   "extends": "airbnb",
   "rules": {
+    "allowImportExportEverywhere": true,
     "indent": ["error", 4],
     "quotes": [
       "error", "double", {

@@ -1,38 +1,31 @@
 import React from "react";
+import SVGInline from "react-svg-inline";
 
-import GitHub from "../../media/contact/GitHub.png";
-import GitHubActive from "../../media/contact/GitHubActive.png";
-import LinkedIn from "../../media/contact/LinkedIn.png";
-import LinkedInActive from "../../media/contact/LinkedInActive.png";
-import Mail from "../../media/contact/Mail.png";
-import MailActive from "../../media/contact/MailActive.png";
-import Medium from "../../media/contact/Medium.png";
-import MediumActive from "../../media/contact/MediumActive.png";
+import GitHub from "../../media/contact/GitHub.svg";
+import LinkedIn from "../../media/contact/LinkedIn.svg";
+import Mail from "../../media/contact/Mail.svg";
+import Medium from "../../media/contact/Medium.svg";
 
 const IconMap = [
     {
-        activeIcon: GitHubActive,
+        icon: GitHub,
         link: "https://www.github.com/sheabelsky",
         name: "GitHub",
-        normalIcon: GitHub,
     },
     {
-        activeIcon: LinkedInActive,
+        icon: LinkedIn,
         link: "https://www.linkedin.com/in/sheabelsky",
         name: "LinkedIn",
-        normalIcon: LinkedIn,
     },
     {
-        activeIcon: MailActive,
+        icon: Mail,
         link: "mailto:sheabelsky@gmail.com",
         name: "Mail",
-        normalIcon: Mail,
     },
     {
-        activeIcon: MediumActive,
+        icon: Medium,
         link: "https://medium.com/@sheabelsky",
         name: "Medium",
-        normalIcon: Medium,
     },
 ];
 
@@ -52,10 +45,9 @@ class ContactIcon extends React.Component {
     render() {
         const {
             icon: {
-                activeIcon,
+                icon,
                 link,
                 name,
-                normalIcon,
             },
         } = this.props;
         const {
@@ -70,7 +62,11 @@ class ContactIcon extends React.Component {
                 rel="noopener noreferrer"
                 target="_blank"
             >
-                <img src={isActive ? activeIcon : normalIcon} alt={`Icon for ${name}`} />
+                <SVGInline
+                    alt={`Icon for ${name}`}
+                    fill={isActive ? "grey" : "white"}
+                    svg={icon}
+                />
             </a>
         );
     }
@@ -79,14 +75,17 @@ class ContactIcon extends React.Component {
 function Footer() {
     return (
         <div className="footer">
-            {
-                IconMap.map((icon, index) => (
-                    <ContactIcon
-                        icon={icon}
-                        key={index}
-                    />
-                ))
-            }
+            <div>© 2018 Shea Hunter Belsky</div>
+            <div className="footer-icons">
+                {
+                    IconMap.map((icon, index) => (
+                        <ContactIcon
+                            icon={icon}
+                            key={index}
+                        />
+                    ))
+                }
+            </div>
         </div>
     );
 }

@@ -10,9 +10,13 @@ const plugins = [
     new ExtractTextPlugin({
         filename: "css/styles.css",
     }),
-    new OptimizeCssAssetsPlugin({
-        cssProcessorOptions: { discardComments: { removeAll: true } },
-    }),
+    // new OptimizeCssAssetsPlugin({
+    //     cssProcessorOptions: {
+    //         discardComments: {
+    //             removeAll: true,
+    //         },
+    //     },
+    // }),
     new SWPrecacheWebpackPlugin({
         cacheId: "shea-belsky-website-1.2",
         dontCacheBustUrlsMatching: /\.\w{8}\./,
@@ -43,9 +47,10 @@ const plugins = [
 module.exports = {
     entry: path.join(__dirname, "src", "index.js"),
     output: {
+        chunkFilename: path.join("js", "[name].bundle.js"),
+        filename: path.join("js", "bundle.js"),
         path: path.join(__dirname, "docs"),
         publicPath: "/",
-        filename: path.join("js", "bundle.js"),
     },
     mode: "production",
     module: {
@@ -55,6 +60,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 options: {
+                    plugins: ["@babel/plugin-syntax-dynamic-import"],
                     presets: ["@babel/preset-env", "@babel/preset-react"],
                 },
             },
@@ -84,7 +90,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
+                test: /\.(jpe?g|png|gif)$/i,
                 use: [
                     {
                         loader: "file-loader?limit=100000",
@@ -105,6 +111,10 @@ module.exports = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.svg$/,
+                loader: "raw-loader",
             },
         ],
     },
