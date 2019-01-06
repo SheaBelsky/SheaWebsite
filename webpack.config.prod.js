@@ -1,4 +1,4 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const path = require("path");
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
@@ -7,18 +7,20 @@ const webpack = require("webpack");
 const PUBLIC_PATH = "https://sheabels.ky/";
 
 const plugins = [
-    new ExtractTextPlugin({
-        filename: "css/styles.css",
+    new MiniCssExtractPlugin({
+        allChunks: true,
+        chunkFilename: path.join("css", "[id].css"),
+        filename: path.join("css", "styles.css"),
     }),
-    // new OptimizeCssAssetsPlugin({
-    //     cssProcessorOptions: {
-    //         discardComments: {
-    //             removeAll: true,
-    //         },
-    //     },
-    // }),
+    new OptimizeCssAssetsPlugin({
+        cssProcessorOptions: {
+            discardComments: {
+                removeAll: true,
+            },
+        },
+    }),
     new SWPrecacheWebpackPlugin({
-        cacheId: "shea-belsky-website-1.2",
+        cacheId: "shea-belsky-website-1.2.1",
         dontCacheBustUrlsMatching: /\.\w{8}\./,
         filename: "js/service-worker.js",
         logger(message) {
@@ -60,23 +62,34 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 options: {
-                    plugins: ["@babel/plugin-syntax-dynamic-import"],
-                    presets: ["@babel/preset-env", "@babel/preset-react"],
+                    plugins: [
+                        "@babel/plugin-syntax-dynamic-import",
+                        "@babel/plugin-proposal-class-properties",
+                    ],
+                    presets: [
+                        "@babel/preset-env",
+                        "@babel/preset-react",
+                    ],
                 },
             },
             {
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: "css-loader",
-                }),
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    "css-loader",
+                ],
             },
             {
                 test: /\.less$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: ["css-loader", "less-loader"],
-                }),
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    "css-loader",
+                    "less-loader",
+                ],
             },
             {
                 test: /\.(woff|woff2|eot|ttf)$/,
