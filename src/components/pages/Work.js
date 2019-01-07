@@ -14,7 +14,7 @@ export default function () {
             className="work-container"
             fluid
             pageCoverImage="gardens.jpg"
-            subtitle="Cue the Hamilton [WORK! WORK!] sound bite"
+            subtitle="WORK WORK! Angelica..."
             title="Work Experience"
         >
             <div className="work" id="google">
