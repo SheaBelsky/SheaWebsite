@@ -1,9 +1,8 @@
 {
   "extends": "airbnb",
-  "parser": "babel-eslint",
   "rules": {
-    "allowImportExportEverywhere": true,
-    "indent" : "off",
+    "indent" : ["error", 4],
+    "max-len": "off",
     "quotes": [
       "error", "double", {
         "allowTemplateLiterals": true
@@ -19,8 +18,7 @@
     "react/no-unescaped-entities": "off",
     "semi": [
       "error", "always"
-    ],
-    "template-curly-spacing" : "off"
+    ]
   },
   "parserOptions": {
     "ecmaFeatures": {

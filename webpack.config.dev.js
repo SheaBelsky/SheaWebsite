@@ -41,7 +41,6 @@ module.exports = {
                 loader: "babel-loader",
                 options: {
                     plugins: [
-                        "@babel/plugin-syntax-dynamic-import",
                         "@babel/plugin-proposal-class-properties",
                     ],
                     presets: [
