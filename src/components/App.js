@@ -7,6 +7,7 @@ import {
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
 // Includes imports
+import Loading from "./includes/Loading";
 import Navigation from "./includes/Navigation";
 
 // Lazy import routes
@@ -57,22 +58,22 @@ initGA(customHistory);
 
 function SwitchContainer({ location }) {
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={Loading}>
             <Switch className="switch" location={location}>
-                <Route exact path="/" render={props => <Home {...props} />} />    {/* Home Page */}
-                <Route exact path="/about" render={props => <About {...props} />} />    {/* About Page */}
+                <Route exact path="/" render={props => <Home {...props} />} /> {/* Home Page */}
+                <Route exact path="/about" render={props => <About {...props} />} /> {/* About Page */}
                 <Route exact path="/photography" render={props => <Photography {...props} />} /> {/* Photography Page */}
                 <Route exact path="/work" render={props => <Work {...props} />} />  {/* Work Page */}
 
                 {/* Work Routes */}
-                <Route exact path="/work/brh" render={props => <BRH {...props} />} />    {/* BigRed//Hacks Page */}
-                <Route exact path="/work/cis" render={props => <CIS {...props} />} />    {/* Cornell CIS Page */}
-                <Route exact path="/work/dti" render={props => <DTI {...props} />} />    {/* Cornell DTI Page */}
-                <Route exact path="/work/ezra" render={props => <Ezra {...props} />} />    {/* Ezra Page */}
-                <Route exact path="/work/google" render={props => <Google {...props} />} />    {/* Google Page */}
-                <Route exact path="/work/ibm" render={props => <IBM {...props} />} />    {/* Google Page */}
-                <Route exact path="/work/issa" render={props => <ISSA {...props} />} />    {/* Google Page */}
-                <Route exact path="/work/wayfair" render={props => <Wayfair {...props} />} />    {/* Google Page */}
+                <Route exact path="/work/brh" render={props => <BRH {...props} />} /> {/* BigRed//Hacks Page */}
+                <Route exact path="/work/cis" render={props => <CIS {...props} />} /> {/* Cornell CIS Page */}
+                <Route exact path="/work/dti" render={props => <DTI {...props} />} /> {/* Cornell DTI Page */}
+                <Route exact path="/work/ezra" render={props => <Ezra {...props} />} /> {/* Ezra Page */}
+                <Route exact path="/work/google" render={props => <Google {...props} />} /> {/* Google Page */}
+                <Route exact path="/work/ibm" render={props => <IBM {...props} />} /> {/* IBM Page */}
+                <Route exact path="/work/issa" render={props => <ISSA {...props} />} /> {/* ISSA Page */}
+                <Route exact path="/work/wayfair" render={props => <Wayfair {...props} />} /> {/* Wayfair Page */}
             </Switch>
         </Suspense>
     );
