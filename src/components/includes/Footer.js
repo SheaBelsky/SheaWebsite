@@ -1,6 +1,9 @@
+// Node module imports
 import React from "react";
+import propTypes from "prop-types";
 import SVGInline from "react-svg-inline";
 
+// Icon imports
 import GitHub from "../../media/contact/GitHub.svg";
 import LinkedIn from "../../media/contact/LinkedIn.svg";
 import Mail from "../../media/contact/Mail.svg";
@@ -71,6 +74,14 @@ class ContactIcon extends React.Component {
         );
     }
 }
+
+ContactIcon.propTypes = {
+    icon: propTypes.shape({
+        icon: propTypes.string.isRequired,
+        link: propTypes.string.isRequired,
+        name: propTypes.string.isRequired,
+    }).isRequired,
+};
 
 function Footer() {
     return (

@@ -1,6 +1,9 @@
 // Node module imports
 import React from "react";
+import propTypes from "prop-types";
 import { NavLink } from "react-router-dom";
+
+// Asset imports
 import NewWindow from "../../media/NewWindow.png";
 
 const MenuItem = ({ content, link }) => (
@@ -13,6 +16,11 @@ const MenuItem = ({ content, link }) => (
         {content}
     </NavLink>
 );
+
+MenuItem.propTypes = {
+    content: propTypes.string.isRequired,
+    link: propTypes.string.isRequired,
+};
 
 function Navigation() {
     return (

@@ -1,23 +1,23 @@
 // Node Module imports
+import React from "react";
 import { createBrowserHistory } from "history";
-import React, { lazy, Suspense } from "react";
+import propTypes from "prop-types";
 import {
     Route, Router, Switch,
 } from "react-router-dom";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
 // Includes imports
-import Loading from "./includes/Loading";
 import Navigation from "./includes/Navigation";
 
-// Lazy import routes
+// Main pages
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Photography from "./pages/Photography";
 import Work from "./pages/Work";
 
 // Work pages
-import BRH from "./pages/work/brh";
+import BRH from "./pages/work/BRH";
 import CIS from "./pages/work/CIS";
 import DTI from "./pages/work/DTI";
 import Ezra from "./pages/work/Ezra";
@@ -58,26 +58,28 @@ initGA(customHistory);
 
 function SwitchContainer({ location }) {
     return (
-        <Suspense fallback={Loading}>
-            <Switch className="switch" location={location}>
-                <Route exact path="/" component={Home} /> {/* Home Page */}
-                <Route exact path="/about" component={About} /> {/* About Page */}
-                <Route exact path="/photography" component={Photography} /> {/* Photography Page */}
-                <Route exact path="/work" component={Work} />  {/* Work Page */}
+        <Switch className="switch" location={location}>
+            <Route exact path="/" component={Home} /> {/* Home Page */}
+            <Route exact path="/about" component={About} /> {/* About Page */}
+            <Route exact path="/photography" component={Photography} /> {/* Photography Page */}
+            <Route exact path="/work" component={Work} />  {/* Work Page */}
 
-                {/* Work Routes */}
-                <Route exact path="/work/brh" component={BRH} /> {/* BigRed//Hacks Page */}
-                <Route exact path="/work/cis" component={CIS} /> {/* Cornell CIS Page */}
-                <Route exact path="/work/dti" component={DTI} /> {/* Cornell DTI Page */}
-                <Route exact path="/work/ezra" component={Ezra} /> {/* Ezra Page */}
-                <Route exact path="/work/google" component={Google} /> {/* Google Page */}
-                <Route exact path="/work/ibm" component={IBM} /> {/* IBM Page */}
-                <Route exact path="/work/issa" component={ISSA} /> {/* ISSA Page */}
-                <Route exact path="/work/wayfair" component={Wayfair} /> {/* Wayfair Page */}
-            </Switch>
-        </Suspense>
+            {/* Work Routes */}
+            <Route exact path="/work/brh" component={BRH} /> {/* BigRed//Hacks Page */}
+            <Route exact path="/work/cis" component={CIS} /> {/* Cornell CIS Page */}
+            <Route exact path="/work/dti" component={DTI} /> {/* Cornell DTI Page */}
+            <Route exact path="/work/ezra" component={Ezra} /> {/* Ezra Page */}
+            <Route exact path="/work/google" component={Google} /> {/* Google Page */}
+            <Route exact path="/work/ibm" component={IBM} /> {/* IBM Page */}
+            <Route exact path="/work/issa" component={ISSA} /> {/* ISSA Page */}
+            <Route exact path="/work/wayfair" component={Wayfair} /> {/* Wayfair Page */}
+        </Switch>
     );
 }
+
+SwitchContainer.propTypes = {
+    location: propTypes.object.isRequired,
+};
 
 function App() {
     return (

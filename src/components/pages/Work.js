@@ -1,8 +1,7 @@
 // Node module imports
-// import { Link } from "react-router-dom";
 import React from "react";
-
 import { Link } from "react-router-dom";
+import propTypes from "prop-types";
 
 // Include imports
 import PageTemplate from "../includes/PageTemplate";
@@ -37,6 +36,14 @@ function Tile(props) {
         </Link>
     );
 }
+
+Tile.propTypes = {
+    backgroundColor: propTypes.string.isRequired,
+    destination: propTypes.string.isRequired,
+    icon: propTypes.string.isRequired,
+    subtitle: propTypes.string.isRequired,
+    title: propTypes.string.isRequired,
+};
 
 function Work() {
     return (
