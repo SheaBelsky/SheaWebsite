@@ -4,7 +4,7 @@ const path = require("path");
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
 const webpack = require("webpack");
 
-const PUBLIC_PATH = "https://sheabels.ky/";
+const PUBLIC_PATH = "https://www.sheabels.ky/";
 
 const plugins = [
     new MiniCssExtractPlugin({

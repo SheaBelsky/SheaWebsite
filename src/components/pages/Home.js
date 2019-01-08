@@ -4,7 +4,7 @@ import React from "react";
 // CSS
 import "../../styles/pages/home.less";
 
-export default function () {
+function Home() {
     return (
         <div className="hero-image">
             <div className="hero-image-subtitle">
@@ -16,3 +16,5 @@ export default function () {
         </div>
     );
 }
+
+export default Home;
