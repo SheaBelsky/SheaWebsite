@@ -3,8 +3,9 @@
   "version": "1.2.3",
   "description": "Shea Belsky Portfolio",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --progress",
-    "build": "./node_modules/.bin/webpack --config webpack.config.prod.js --progress"
+    "build": "npm run clean-docs && ./node_modules/.bin/webpack --config webpack.config.prod.js --progress",
+    "clean-docs": "rm -rf docs/js && rm -rf docs/img && rm -rf docs/css && echo 'docs folder cleaned'",
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --progress"
   },
   "repository": {
     "type": "git",
