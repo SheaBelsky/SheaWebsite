@@ -10,7 +10,7 @@ import headshot from "../../media/headshot.jpg";
 // CSS
 import "../../styles/pages/about.less";
 
-export default function () {
+function About() {
     return (
         <PageTemplate
             className="about-container"
@@ -18,7 +18,11 @@ export default function () {
             subtitle="Doing cool things, one pixel at a time"
             title="About Me"
         >
-            <img src={headshot} className="shea-profile" alt="Shea Hunter Belsky headshot" />
+            <img
+                alt="Shea Hunter Belsky headshot"
+                className="shea-profile"
+                src={headshot}
+            />
             <p>
                 Hi there! I'm Shea Hunter Belsky, a graduate of Cornell University's Information Science department. I hold a Masters of Professional Studies and Bachelor's of Science in Information Science (concentrating in User Experience), and a minor in Education.
             </p>
@@ -34,3 +38,5 @@ export default function () {
         </PageTemplate>
     );
 }
+
+export default About;

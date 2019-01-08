@@ -10,10 +10,10 @@ import ReactCSSTransitionReplace from "react-css-transition-replace";
 import Navigation from "./includes/Navigation";
 
 // Lazy import routes
-const About = lazy(() => import('./pages/About') );
-const Home = lazy(() => import('./pages/Home') );
-const Photography = lazy(() => import('./pages/Photography') );
-const Work = lazy(() => import('./pages/Work') );
+const About = lazy(() => import("./pages/About"));
+const Home = lazy(() => import("./pages/Home"));
+const Photography = lazy(() => import("./pages/Photography"));
+const Work = lazy(() => import("./pages/Work"));
 
 // Require these files so Webpack outputs them
 require("./../media/favicon.ico");

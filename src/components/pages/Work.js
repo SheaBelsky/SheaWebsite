@@ -8,7 +8,7 @@ import PageTemplate from "../includes/PageTemplate";
 // CSS
 import "../../styles/pages/work.less";
 
-export default function () {
+function Work() {
     return (
         <PageTemplate
             className="work-container"
@@ -149,3 +149,5 @@ export default function () {
         </PageTemplate>
     );
 }
+
+export default Work;

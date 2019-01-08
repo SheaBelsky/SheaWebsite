@@ -3,8 +3,6 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
 
-const PUBLIC_PATH = "https://sheabels.ky/";
-
 const plugins = [
     new MiniCssExtractPlugin({
         allChunks: true,
