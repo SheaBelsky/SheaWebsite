@@ -15,6 +15,16 @@ const Home = lazy(() => import("./pages/Home"));
 const Photography = lazy(() => import("./pages/Photography"));
 const Work = lazy(() => import("./pages/Work"));
 
+// Work pages
+const BRH = lazy(() => import("./pages/work/brh"));
+const CIS = lazy(() => import("./pages/work/CIS"));
+const DTI = lazy(() => import("./pages/work/DTI"));
+const Ezra = lazy(() => import("./pages/work/Ezra"));
+const Google = lazy(() => import("./pages/work/Google"));
+const IBM = lazy(() => import("./pages/work/IBM"));
+const ISSA = lazy(() => import("./pages/work/ISSA"));
+const Wayfair = lazy(() => import("./pages/work/Wayfair"));
+
 // Require these files so Webpack outputs them
 require("./../media/favicon.ico");
 require("./../media/resume/Shea-H-Belsky-Resume.pdf");
@@ -52,7 +62,17 @@ function SwitchContainer({ location }) {
                 <Route exact path="/" render={props => <Home {...props} />} />    {/* Home Page */}
                 <Route exact path="/about" render={props => <About {...props} />} />    {/* About Page */}
                 <Route exact path="/photography" render={props => <Photography {...props} />} /> {/* Photography Page */}
-                <Route exact path="/work" render={props => <Work {...props} />} />    {/* Work Page */}
+                <Route exact path="/work" render={props => <Work {...props} />} />  {/* Work Page */}
+
+                {/* Work Routes */}
+                <Route exact path="/work/brh" render={props => <BRH {...props} />} />    {/* BigRed//Hacks Page */}
+                <Route exact path="/work/cis" render={props => <CIS {...props} />} />    {/* Cornell CIS Page */}
+                <Route exact path="/work/dti" render={props => <DTI {...props} />} />    {/* Cornell DTI Page */}
+                <Route exact path="/work/ezra" render={props => <Ezra {...props} />} />    {/* Ezra Page */}
+                <Route exact path="/work/google" render={props => <Google {...props} />} />    {/* Google Page */}
+                <Route exact path="/work/ibm" render={props => <IBM {...props} />} />    {/* Google Page */}
+                <Route exact path="/work/issa" render={props => <ISSA {...props} />} />    {/* Google Page */}
+                <Route exact path="/work/wayfair" render={props => <Wayfair {...props} />} />    {/* Google Page */}
             </Switch>
         </Suspense>
     );
