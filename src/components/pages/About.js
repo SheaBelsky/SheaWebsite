@@ -14,7 +14,6 @@ function About() {
     return (
         <PageTemplate
             className="about-container"
-            pageCoverImage="sunset.jpg"
             subtitle="Doing cool things, one pixel at a time"
             title="About Me"
         >

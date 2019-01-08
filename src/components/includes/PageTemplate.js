@@ -15,12 +15,16 @@ function PageTemplate(props) {
     return (
         <div className={pageClass} id="page-container">
             <div className="page-cover">
-                <div className="page-title">
-                    {title}
-                </div>
-                <div className="page-subtitle">
-                    {subtitle}
-                </div>
+                {title && (
+                    <div className="page-title">
+                        {title}
+                    </div>
+                )}
+                {subtitle && (
+                    <div className="page-subtitle">
+                        {subtitle}
+                    </div>
+                )}
             </div>
             <div className="page-content">
                 {children}

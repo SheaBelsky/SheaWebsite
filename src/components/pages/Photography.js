@@ -21,7 +21,6 @@ function Photography() {
     return (
         <PageTemplate
             className="photography-container"
-            pageCoverImage="slope.jpg"
             subtitle="Memories last a lifetime, photos last forever"
             title="Photography"
         >
