@@ -8,8 +8,8 @@ function CIS() {
             className="work-page-container"
             title="Computing & Information Science"
         >
-            <h2>Graduate Teaching Assistant</h2>
-            <h3>August 2018 - Present</h3>
+            <h2>Graduate (Head) Teaching Assistant</h2>
+            <h3>August - December 2018</h3>
             <p>
                 Head TA for INFO 4340, User Experience and Software Development Studio. I work with the professor to develop materials for the course, including homework assignments, projects, and activities. I am a main point of contact for questions regarding course material, questions, or grading issues. I also hold weekly office hours.
             </p>

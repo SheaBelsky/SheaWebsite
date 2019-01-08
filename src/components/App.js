@@ -11,20 +11,20 @@ import Loading from "./includes/Loading";
 import Navigation from "./includes/Navigation";
 
 // Lazy import routes
-const About = lazy(() => import("./pages/About"));
-const Home = lazy(() => import("./pages/Home"));
-const Photography = lazy(() => import("./pages/Photography"));
-const Work = lazy(() => import("./pages/Work"));
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Photography from "./pages/Photography";
+import Work from "./pages/Work";
 
 // Work pages
-const BRH = lazy(() => import("./pages/work/brh"));
-const CIS = lazy(() => import("./pages/work/CIS"));
-const DTI = lazy(() => import("./pages/work/DTI"));
-const Ezra = lazy(() => import("./pages/work/Ezra"));
-const Google = lazy(() => import("./pages/work/Google"));
-const IBM = lazy(() => import("./pages/work/IBM"));
-const ISSA = lazy(() => import("./pages/work/ISSA"));
-const Wayfair = lazy(() => import("./pages/work/Wayfair"));
+import BRH from "./pages/work/brh";
+import CIS from "./pages/work/CIS";
+import DTI from "./pages/work/DTI";
+import Ezra from "./pages/work/Ezra";
+import Google from "./pages/work/Google";
+import IBM from "./pages/work/IBM";
+import ISSA from "./pages/work/ISSA";
+import Wayfair from "./pages/work/Wayfair";
 
 // Require these files so Webpack outputs them
 require("./../media/favicon.ico");
@@ -60,20 +60,20 @@ function SwitchContainer({ location }) {
     return (
         <Suspense fallback={Loading}>
             <Switch className="switch" location={location}>
-                <Route exact path="/" render={props => <Home {...props} />} /> {/* Home Page */}
-                <Route exact path="/about" render={props => <About {...props} />} /> {/* About Page */}
-                <Route exact path="/photography" render={props => <Photography {...props} />} /> {/* Photography Page */}
-                <Route exact path="/work" render={props => <Work {...props} />} />  {/* Work Page */}
+                <Route exact path="/" component={Home} /> {/* Home Page */}
+                <Route exact path="/about" component={About} /> {/* About Page */}
+                <Route exact path="/photography" component={Photography} /> {/* Photography Page */}
+                <Route exact path="/work" component={Work} />  {/* Work Page */}
 
                 {/* Work Routes */}
-                <Route exact path="/work/brh" render={props => <BRH {...props} />} /> {/* BigRed//Hacks Page */}
-                <Route exact path="/work/cis" render={props => <CIS {...props} />} /> {/* Cornell CIS Page */}
-                <Route exact path="/work/dti" render={props => <DTI {...props} />} /> {/* Cornell DTI Page */}
-                <Route exact path="/work/ezra" render={props => <Ezra {...props} />} /> {/* Ezra Page */}
-                <Route exact path="/work/google" render={props => <Google {...props} />} /> {/* Google Page */}
-                <Route exact path="/work/ibm" render={props => <IBM {...props} />} /> {/* IBM Page */}
-                <Route exact path="/work/issa" render={props => <ISSA {...props} />} /> {/* ISSA Page */}
-                <Route exact path="/work/wayfair" render={props => <Wayfair {...props} />} /> {/* Wayfair Page */}
+                <Route exact path="/work/brh" component={BRH} /> {/* BigRed//Hacks Page */}
+                <Route exact path="/work/cis" component={CIS} /> {/* Cornell CIS Page */}
+                <Route exact path="/work/dti" component={DTI} /> {/* Cornell DTI Page */}
+                <Route exact path="/work/ezra" component={Ezra} /> {/* Ezra Page */}
+                <Route exact path="/work/google" component={Google} /> {/* Google Page */}
+                <Route exact path="/work/ibm" component={IBM} /> {/* IBM Page */}
+                <Route exact path="/work/issa" component={ISSA} /> {/* ISSA Page */}
+                <Route exact path="/work/wayfair" component={Wayfair} /> {/* Wayfair Page */}
             </Switch>
         </Suspense>
     );
@@ -86,11 +86,17 @@ function App() {
                 <Navigation />
                 <Route
                     render={({ location }) => (
-                        <SwitchContainer
-                            className="switchContainer"
-                            location={location}
-                            key={location.pathname}
-                        />
+                        <ReactCSSTransitionReplace
+                            transitionName="fade-wait"
+                            transitionEnterTimeout={1000}
+                            transitionLeaveTimeout={1000}
+                        >
+                            <SwitchContainer
+                                className="switchContainer"
+                                location={location}
+                                key={location.pathname}
+                            />
+                        </ReactCSSTransitionReplace>
                     )}
                 />
             </div>

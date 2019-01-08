@@ -9,7 +9,7 @@ function Google() {
             title="Google"
         >
             <h2>User Experience Engineering Intern</h2>
-            <h3>May 2018 - August 2018</h3>
+            <h3>May - August 2018</h3>
             <p>
                 I worked with Google's Search and Assistant team during the Summer of 2018 as a User Experience Engineering Intern. I worked on internal prototyping, design tools, and infrastructure for designers, researchers, and other User Experience Engineers.
             </p>
