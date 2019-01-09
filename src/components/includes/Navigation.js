@@ -6,6 +6,11 @@ import { NavLink } from "react-router-dom";
 // Asset imports
 import NewWindow from "../../media/NewWindow.png";
 
+/**
+ * Represents a unique link in the navigation that goes to anothe rpage within the website
+ * @param {string} content The inner text of the link
+ * @param {string} link The page to which the link will go to
+ */
 const MenuItem = ({ content, link }) => (
     <NavLink
         activeClassName="active"

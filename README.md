@@ -11,12 +11,11 @@ Based off of [rafrex/spa-github-pages](https://github.com/rafrex/spa-github-page
 * Page templates with header images (works best with panoramas)
 * React Router for making all the pages about all the things
 * Webpack-dev-server for developing locally
-* ESLint config because I like Airbnb, double quotes, and four spaces. Use your own if you want
+* ESLint config because I like Airbnb, double quotes, and four spaces. Use your own if you want!
 * Service worker for assets like images, your resume, and whatever else you want! This requires an 
-HTTPS certificate (if hosted on GitHub pages, this is free.) This does not cache Instagram images, as 
-those are served hot and fresh from Instagram itself
+HTTPS certificate (if hosted on GitHub Pages, this is free.)
 * GitHub Pages support, so you can host your site on GitHub! Set the site to serve from the `docs` branch
-under your repository's settings. 
+under your repository's settings.
 
 # Get Started
 1. Clone this repository to your computer
@@ -31,10 +30,11 @@ npm install
 
 4. Edit `webpack.config.prod.js` with your domain name for Service Worker compatibility. 
 
-4. Start it up
+5. Start it up
 ```
 npm start
 ```
-5. (Optional) If you want the Instagram feed, follow the setup instructions [here](http://instafeedjs.com)
-
-
+6. When you're ready to build it for production, run the following commmand:
+```
+npm run build
+```

@@ -9,6 +9,7 @@ import LinkedIn from "../../media/contact/LinkedIn.svg";
 import Mail from "../../media/contact/Mail.svg";
 import Medium from "../../media/contact/Medium.svg";
 
+// Provide each icon with an image, link, and name
 const IconMap = [
     {
         icon: GitHub,
@@ -40,9 +41,14 @@ class ContactIcon extends React.Component {
         };
     }
 
-    handleHover() {
-        const { isActive } = this.state;
-        this.setState({ isActive: !isActive });
+    // When the icon is hovered on top of, set the icon to be active (dimmed slighty in fill)
+    handleMouseEnter() {
+        this.setState({ isActive: true });
+    }
+
+    // When the icon is hovered away from, set the icon to be inactive (white in fill)
+    handleMouseLeave() {
+        this.setState({ isActive: false });
     }
 
     render() {
@@ -56,18 +62,21 @@ class ContactIcon extends React.Component {
         const {
             isActive,
         } = this.state;
+        // If this icon is being hovered on top of (active), slightly dim the color.
+        // Otherwise, the icon will be white in fill.
+        const fill = isActive ? "grey" : "white";
         return (
             <a
                 className="contact-icon"
                 href={link}
-                onMouseEnter={this.handleHover.bind(this)}
-                onMouseLeave={this.handleHover.bind(this)}
+                onMouseEnter={this.handleMouseEnter.bind(this)}
+                onMouseLeave={this.handleMouseLeave.bind(this)}
                 rel="noopener noreferrer"
                 target="_blank"
             >
                 <SVGInline
                     alt={`Icon for ${name}`}
-                    fill={isActive ? "grey" : "white"}
+                    fill={fill}
                     svg={icon}
                 />
             </a>
@@ -75,6 +84,7 @@ class ContactIcon extends React.Component {
     }
 }
 
+// PropTypes for a ContactIcon
 ContactIcon.propTypes = {
     icon: propTypes.shape({
         icon: propTypes.string.isRequired,

@@ -8,10 +8,13 @@ function Ezra() {
             className="work-page-container"
             title="Ezra Tech"
         >
-            <h2>Co-Founder, CTO, and CIO</h2>
+            <h2>Co-Founder, Chief Technology Officer, and Chief Information Officer</h2>
             <h3>October 2016 - Present</h3>
             <p>
-                <a href="https://www.ezratech.us" rel="noopener noreferrer" target="_blank">Ezra Tech</a> is a full-stack solution for Science Olympiad event management. Created & maintain client experience and server-side processing to aid tournament organizers, coaches, and participants with event logistics. Made with Node.js, Express.js, MongoDB, PugJS, and Semantic UI.
+                <a href="https://www.ezratech.us" rel="noopener noreferrer" target="_blank">Ezra Tech</a> is a full-service solution for Science Olympiad event management. I am one of the co-founders of the platform, the CTO, and CIO. I actively develop and maintain the platform, provide customer support to users, work directly with customers and clients to onboard them to the platform, and attend the competitions of customers to ensure system uptime and speed.
+            </p>
+            <p>
+                As of January 2019, Ezra has hosted over 100 Science Olympiad competitions, has over 2000 registered users, and hundreds of daily active users. Ezra will be the primary solution for logistics, scoring, and user management for the <a href="https://www.scienceolympiad2019.org" target="_blank" rel="noopener noreferrer">2019 Science Olmpiad National Tournament</a>.
             </p>
         </PageTemplate>
     );
