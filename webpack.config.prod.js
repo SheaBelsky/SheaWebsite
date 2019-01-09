@@ -20,7 +20,7 @@ const plugins = [
         },
     }),
     new SWPrecacheWebpackPlugin({
-        cacheId: "shea-belsky-website-1.2.3",
+        cacheId: "shea-belsky-website-1.2.4",
         dontCacheBustUrlsMatching: /\.\w{8}\./,
         filename: "js/service-worker.js",
         logger(message) {
