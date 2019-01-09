@@ -5,16 +5,27 @@ import propTypes from "prop-types";
 // Include imports
 import Footer from "./Footer";
 
+/**
+ * A template that all other pages on the website inherit from.
+ * @param {object} props Object of all properties passed to this page
+ * @param {string} props.backgroundColor The background color that the header of this page may have
+ * @param {(React.element[]|React.element)} props.children Children of this template
+ * @param {string} props.className The CSS class given to this page
+ * @param {string} props.subtitle Subtitle that appears in the header
+ * @param {string} props.title Title that appears in the header
+ */
 function PageTemplate(props) {
+    // As this template is stateless and does not rerender itself, we can call this to scroll to the top of the window when the page loads, rather than needing to use componentDidMount to do the same thing.
+    window.scrollTo(0, 0);
+
     const {
         backgroundColor,
         children,
         className,
-        fluid,
         subtitle,
         title,
     } = props;
-    const pageClass = `page${fluid === true ? " fluid" : ""} ${className}`;
+    const pageClass = `page ${className}`;
     const pageCoverStyles = backgroundColor.length > 0
         ? { backgroundColor }
         : undefined;
@@ -45,14 +56,12 @@ PageTemplate.propTypes = {
         propTypes.element,
     ]).isRequired,
     className: propTypes.string.isRequired,
-    fluid: propTypes.bool,
     subtitle: propTypes.string,
     title: propTypes.string.isRequired,
 };
 
 PageTemplate.defaultProps = {
     backgroundColor: "",
-    fluid: false,
     subtitle: "",
 };
 

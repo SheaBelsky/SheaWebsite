@@ -18,7 +18,7 @@ const isLocalhost = Boolean(
     ),
 );
 
-const PUBLIC_URL = "https://sheabels.ky";
+const PUBLIC_URL = "https://www.sheabels.ky";
 
 export default function register() {
     if ("serviceWorker" in navigator) {
@@ -32,7 +32,7 @@ export default function register() {
         }
 
         window.addEventListener("load", () => {
-            const swUrl = `${PUBLIC_URL}/build/service-worker.js`;
+            const swUrl = `${PUBLIC_URL}/docs/service-worker.js`;
 
             if (isLocalhost) {
                 // This is running on localhost. Lets check if a service worker still exists or not.
@@ -42,8 +42,7 @@ export default function register() {
                 // service worker/PWA documentation.
                 navigator.serviceWorker.ready.then(() => {
                     console.log(
-                        "This web app is being served cache-first by a service "
-                        + "worker. To learn more, visit https://goo.gl/SC7cgQ",
+                        "This web app is being served cache-first by a service worker. To learn more, visit https://goo.gl/SC7cgQ",
                     );
                 });
             } else {
@@ -52,7 +51,7 @@ export default function register() {
             }
         });
     } else {
-        console.log("serviceWorker" in navigator, "hi");
+        console.log("Browser does not support service workers");
     }
 }
 

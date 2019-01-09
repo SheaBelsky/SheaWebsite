@@ -62,3 +62,26 @@
     }
   }
 }
+
+.ta-table {
+  box-sizing: border-box;
+  color: @work-blue;
+  margin-top: 5%;
+  width: 100%;
+
+  tbody tr:first-child {
+    border-top: 1px solid @work-blue;
+  }
+
+  td, th {
+    text-align: center;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  @media @small {
+    font-size: 16px;
+  }
+}

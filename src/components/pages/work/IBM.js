@@ -15,7 +15,7 @@ function IBM() {
             </p>
             <h3>June - August 2016</h3>
             <p>
-                Implemented functionality for user input through speech for the <a href="https://conversation-demo.mybluemix.net/" rel="noopener noreferrer" target="_blank"> Watson Conversation demo app</a>.
+                During the summer of 2016, I worked in IBM Watson's Littleton Office on the Watson Engagement Advisor App Squad. Implemented functionality for user input through speech for the <a href="https://conversation-demo.mybluemix.net/" rel="noopener noreferrer" target="_blank"> Watson Conversation demo app</a>.
             </p>
         </PageTemplate>
     );

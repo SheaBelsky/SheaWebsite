@@ -49,7 +49,6 @@ function Work() {
     return (
         <PageTemplate
             className="work-container"
-            fluid
             subtitle="WORK WORK! Angelica..."
             title="Work Experience"
         >
