@@ -48,12 +48,6 @@ strong {
 
 // Page styling
 .page {
-  margin-top: 45px;
-
-  @media @small {
-    margin-top: 85px;
-  }
-
   .page-content {
     display: block;
     font-size: 1.2rem;
@@ -66,10 +60,11 @@ strong {
     }
   }
 
+  // The "cover" of the page, including its title and subtitle
   .page-cover {
     background-color: rgb(220,220,220);
     flex-direction: column;
-    height: 150px;
+    height: 200px;
 
     .page-title {
       color: black;
@@ -87,7 +82,7 @@ strong {
 }
 .fade-wait-leave.fade-wait-leave-active {
   opacity: 0;
-  transition: opacity 0.4s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .fade-wait-enter {
@@ -96,10 +91,10 @@ strong {
 .fade-wait-enter.fade-wait-enter-active {
   opacity: 1;
   /* Delay the enter animation until the leave completes */
-  transition: opacity 0.4s ease-in 0.6s;
+  transition: opacity 0.5s ease-in 0.6s;
 }
 .fade-wait-height {
-  transition: height 0.6s ease-in-out;
+  transition: height .0s ease-in-out .4s;
 }
 
 // Home hero, page subtitles

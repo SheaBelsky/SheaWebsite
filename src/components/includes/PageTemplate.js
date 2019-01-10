@@ -14,39 +14,48 @@ import Footer from "./Footer";
  * @param {string} props.subtitle Subtitle that appears in the header
  * @param {string} props.title Title that appears in the header
  */
-function PageTemplate(props) {
-    // As this template is stateless and does not rerender itself, we can call this to scroll to the top of the window when the page loads, rather than needing to use componentDidMount to do the same thing.
-    window.scrollTo(0, 0);
+class PageTemplate extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-    const {
-        backgroundColor,
-        children,
-        className,
-        subtitle,
-        title,
-    } = props;
-    const pageClass = `page ${className}`;
-    const pageCoverStyles = backgroundColor.length > 0
-        ? { backgroundColor }
-        : undefined;
-    return (
-        <div className={pageClass} id="page-container">
-            <div className="page-cover" style={pageCoverStyles}>
-                <div className="page-title">
-                    {title}
-                </div>
-                {subtitle.length > 0 && (
-                    <div className="page-subtitle">
-                        {subtitle}
+    componentWillMount() {
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 600);
+    }
+
+    render() {
+        const {
+            backgroundColor,
+            children,
+            className,
+            subtitle,
+            title,
+        } = this.props;
+        const pageClass = `page ${className}`;
+        const pageCoverStyles = backgroundColor.length > 0
+            ? { backgroundColor }
+            : undefined;
+        return (
+            <div className={pageClass} id="page-container">
+                <div className="page-cover" style={pageCoverStyles}>
+                    <div className="page-title">
+                        {title}
                     </div>
-                )}
+                    {subtitle.length > 0 && (
+                        <div className="page-subtitle">
+                            {subtitle}
+                        </div>
+                    )}
+                </div>
+                <div className="page-content">
+                    {children}
+                </div>
+                <Footer />
             </div>
-            <div className="page-content">
-                {children}
-            </div>
-            <Footer />
-        </div>
-    );
+        );
+    }
 }
 
 PageTemplate.propTypes = {

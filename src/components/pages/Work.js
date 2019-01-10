@@ -74,25 +74,18 @@ function Work() {
                 subtitle="User Experience Engineer Intern"
             />
             <Tile
-                backgroundColor="black"
-                destination="/work/ibm"
-                icon={require("../../media/work/Watson.png")}
-                subtitle="Front-End Developer Intern"
-                title="IBM Watson"
-            />
-            <Tile
-                backgroundColor="red"
-                destination="/work/brh"
-                icon={require("../../media/work/BRH.png")}
-                subtitle="Web Team Lead"
-                title="BigRed//Hacks"
-            />
-            <Tile
                 backgroundColor="#6F6F6F"
                 destination="/work/dti"
                 icon={require("../../media/work/DTI.png")}
-                subtitle="Developer Lead, Founder of 'Trends in Web Development'"
+                subtitle="Creator of 'Trends in Web Development', Developer Lead"
                 title="Cornell Design & Tech Initiative"
+            />
+            <Tile
+                backgroundColor="teal"
+                destination="/work/rapid"
+                icon={require("../../media/work/Rapid.png")}
+                subtitle="Project: The Music Box"
+                title="INFO 4320: Rapid Prototyping"
             />
             <Tile
                 backgroundColor="cadetblue"
@@ -102,12 +95,34 @@ function Work() {
                 title="Computing and Information Science"
             />
             <Tile
+                backgroundColor="black"
+                destination="/work/ibm"
+                icon={require("../../media/work/Watson.png")}
+                subtitle="Front-End Developer Intern"
+                title="IBM Watson"
+            />
+            <Tile
                 backgroundColor="navy"
                 destination="/work/issa"
                 icon={require("../../media/work/ISSA.png")}
                 subtitle="President and Co-President"
                 title="Information Science Student Association"
             />
+            <Tile
+                backgroundColor="red"
+                destination="/work/brh"
+                icon={require("../../media/work/BRH.png")}
+                subtitle="Web Team Lead, Volunteer Coordinator"
+                title="BigRed//Hacks"
+            />
+            <Tile
+                backgroundColor="tomato"
+                destination="/work/slopeday"
+                icon={require("../../media/work/SDPB.png")}
+                subtitle="Volunteer Director, Recrutment Director"
+                title="Slope Day Programming Board"
+            />
+
         </PageTemplate>
     );
 }
