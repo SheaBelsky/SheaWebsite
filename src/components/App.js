@@ -11,7 +11,6 @@ import ReactCSSTransitionReplace from "react-css-transition-replace";
 import Navigation from "./includes/Navigation";
 
 // Main pages
-import About from "./pages/About";
 import Home from "./pages/Home";
 import Photography from "./pages/Photography";
 import Work from "./pages/Work";
@@ -62,7 +61,6 @@ function SwitchContainer({ location }) {
     return (
         <Switch className="switch" location={location}>
             <Route exact path="/" component={Home} /> {/* Home Page */}
-            <Route exact path="/about" component={About} /> {/* About Page */}
             <Route exact path="/photography" component={Photography} /> {/* Photography Page */}
             <Route exact path="/work" component={Work} />  {/* Work Page */}
 
