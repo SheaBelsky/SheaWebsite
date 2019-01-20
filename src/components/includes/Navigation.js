@@ -42,10 +42,6 @@ function Navigation() {
             </div>
             <div className="nav-item-container">
                 <MenuItem
-                    link="/about"
-                    content="About"
-                />
-                <MenuItem
                     link="/work"
                     content="Work"
                 />
