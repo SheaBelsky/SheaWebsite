@@ -18,7 +18,7 @@ const isLocalhost = Boolean(
     ),
 );
 
-const PUBLIC_URL = "https://www.sheabels.ky";
+const PUBLIC_URL = "https://www.sheabelsky.com";
 
 export default function register() {
     if ("serviceWorker" in navigator) {
