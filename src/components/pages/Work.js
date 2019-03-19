@@ -57,7 +57,7 @@ function Work() {
                 destination="/work/wayfair"
                 icon={require("../../media/work/Wayfair.png")}
                 title="Wayfair"
-                subtitle="Incoming Front-End Developer"
+                subtitle="Front-End Web Developer"
             />
             <Tile
                 backgroundColor="red"
