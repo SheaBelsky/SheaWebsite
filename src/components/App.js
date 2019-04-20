@@ -75,6 +75,9 @@ function SwitchContainer({ location }) {
             <Route exact path="/work/rapid" component={Rapid} /> {/* Rapid Prototyping Page */}
             <Route exact path="/work/slopeday" component={SDPB} /> {/* Rapid Prototyping Page */}
             <Route exact path="/work/wayfair" component={Wayfair} /> {/* Wayfair Page */}
+
+            { /* 404 */}
+            <Route path="*" exact={true} component={Home} />
         </Switch>
     );
 }
