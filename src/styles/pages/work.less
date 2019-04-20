@@ -5,83 +5,83 @@
 @work-white: white;
 
 .work-container.page {
-  .page-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 5vh 0;
-    width: 90%;
+    .page-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 5vh 0;
+        width: 90%;
 
-    @media @small {
-      width: 100%;
-    }
-  }
-
-  .workTile {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5% 0;
-    text-align: center;
-    width: 50%;
-
-    @media @small {
-      width: 100%;
+        @media @small {
+            width: 100%;
+        }
     }
 
-    &:hover {
-      cursor: pointer;
+    .workTile {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5% 0;
+        text-align: center;
+        width: 50%;
 
-      .workTile__subtitle {
-        color: darken(#E5E5E5, 20%);
-      }
-      .workTile__title {
-        color: darken(white, 20%);
-      }
-    }
+        @media @small {
+            width: 100%;
+        }
 
-    .workTile__icon {
-      width: 25%;
-    }
+        &:hover {
+            cursor: pointer;
 
-    .workTile__subtitle, .workTile__title {
-      padding-top: 2vh;
-      transition: 0.3s color;
-    }
+            .workTile__subtitle {
+                color: darken(#E5E5E5, 20%);
+            }
+            .workTile__title {
+                color: darken(white, 20%);
+            }
+        }
 
-    .workTile__subtitle {
-      color: #E5E5E5;
-      font-size: 1.2rem;
-    }
+        .workTile__icon {
+            width: 25%;
+        }
 
-    .workTile__title {
-      color: white;
-      font-size: 1.5rem;
+        .workTile__subtitle, .workTile__title {
+            padding-top: 2vh;
+            transition: 0.3s color;
+        }
+
+        .workTile__subtitle {
+            color: #E5E5E5;
+            font-size: 1.2rem;
+        }
+
+        .workTile__title {
+            color: white;
+            font-size: 1.5rem;
+        }
     }
-  }
 }
 // Table styling for classes I have been a teaching assistant for
 .ta-table {
-  box-sizing: border-box;
-  color: @work-blue;
-  margin-top: 5%;
-  width: 100%;
+    box-sizing: border-box;
+    color: @work-blue;
+    margin-top: 5%;
+    width: 100%;
 
-  thead {
-    border-bottom: 1px solid @work-blue;
-  }
+    thead {
+        border-bottom: 1px solid @work-blue;
+    }
 
-  td, th {
-    text-align: center;
-  }
+    td, th {
+        text-align: center;
+    }
 
-  th {
-    font-weight: bold;
-  }
+    th {
+        font-weight: bold;
+    }
 
-  @media @small {
-    font-size: 16px;
-  }
+    @media @small {
+        font-size: 16px;
+    }
 }

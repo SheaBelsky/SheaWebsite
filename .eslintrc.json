@@ -1,13 +1,13 @@
 {
-  "extends": "airbnb",
-  "rules": {
-    "indent" : ["error", 4],
-    "max-len": "off",
-    "quotes": [
-      "error", "double", {
-        "allowTemplateLiterals": true
-      }
-    ],
+    "extends": "airbnb",
+    "rules": {
+        "indent" : ["error", 4],
+        "max-len": "off",
+        "quotes": [
+            "error", "double", {
+                "allowTemplateLiterals": true
+            }
+        ],
     "react/forbid-prop-types": "off",
     "react/jsx-boolean-value": "off",
     "react/jsx-filename-extension": "off",
@@ -17,15 +17,15 @@
     "react/no-array-index-key": "off",
     "react/no-unescaped-entities": "off",
     "semi": [
-      "error", "always"
+        "error", "always"
     ]
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
-  },
-  "plugins": [
-    "react"
-  ]
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "plugins": [
+        "react"
+    ]
 }
