@@ -26,7 +26,7 @@ function About() {
                 Hi there! I'm Shea Hunter Belsky, a graduate of Cornell University's Information Science department. I hold a Masters of Professional Studies and Bachelor's of Science in Information Science (concentrating in User Experience), and a minor in Education.
             </p>
             <p>
-                I currently work for Wayfair as a Front-End Web Developer. I am a member of the Design Services team, which connects interior designers and potential clients together to plan and implement ideas for the client's home.
+                I currently work for Wayfair as a Front-End Web Developer. I am a member of the Design Services team, which connects interior designers and potential clients together to plan and implement projects for the customer's home.
             </p>
             <p>
                 I work at the intersection of design and technology, solving problems throughout the product design lifecycle. From user research to prototyping, software engineering and testing, I'm at home in developing products and applications at every step of the way.
