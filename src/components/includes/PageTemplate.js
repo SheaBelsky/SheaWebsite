@@ -15,11 +15,7 @@ import Footer from "./Footer";
  * @param {string} props.title Title that appears in the header
  */
 class PageTemplate extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
-    componentWillMount() {
+    componentDidMount() {
         setTimeout(() => {
             window.scrollTo(0, 0);
         }, 600);
