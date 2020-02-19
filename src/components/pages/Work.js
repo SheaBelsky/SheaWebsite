@@ -27,12 +27,12 @@ function WorkTile(props) {
             style={tileStyles}
         >
             <img alt={`Icon for ${title}`} src={icon} className="workTile__icon" />
-            <div className="workTile__title">
+            <h2 className="workTile__title">
                 {title}
-            </div>
-            <div className="workTile__subtitle">
+            </h2>
+            <h3 className="workTile__subtitle">
                 {subtitle}
-            </div>
+            </h3>
         </Link>
     );
 }
