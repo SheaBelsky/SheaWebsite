@@ -1,5 +1,5 @@
 // Node module imports
-import React from "react";
+import React, { useCallback, useState } from "react";
 import propTypes from "prop-types";
 import SVGInline from "react-svg-inline";
 
@@ -33,56 +33,38 @@ const IconMap = [
     },
 ];
 
-class ContactIcon extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isActive: false,
-        };
-    }
-
-    // When the icon is hovered on top of, set the icon to be active (dimmed slighty in fill)
-    handleMouseEnter() {
-        this.setState({ isActive: true });
-    }
-
-    // When the icon is hovered away from, set the icon to be inactive (white in fill)
-    handleMouseLeave() {
-        this.setState({ isActive: false });
-    }
-
-    render() {
-        const {
-            icon: {
-                icon,
-                link,
-                name,
-            },
-        } = this.props;
-        const {
-            isActive,
-        } = this.state;
-        // If this icon is being hovered on top of (active), slightly dim the color.
-        // Otherwise, the icon will be white in fill.
-        const fill = isActive ? "grey" : "white";
-        return (
-            <a
-                className="contact-icon"
-                href={link}
-                onMouseEnter={this.handleMouseEnter.bind(this)}
-                onMouseLeave={this.handleMouseLeave.bind(this)}
-                rel="noopener noreferrer"
-                target="_blank"
-            >
-                <SVGInline
-                    alt={`Icon for ${name}`}
-                    fill={fill}
-                    svg={icon}
-                />
-            </a>
-        );
-    }
-}
+const ContactIcon = (props) => {
+    const [isIconActive, setIsIconActive] = useState(false);
+    const toggleIsIconActive = useCallback(() => {
+        setIsIconActive((oldIsIconActive) => !oldIsIconActive);
+    }, []);
+    const {
+        icon: {
+            icon,
+            link,
+            name,
+        },
+    } = props;
+    // If this icon is being hovered on top of (active), slightly dim the color.
+    // Otherwise, the icon will be white in fill.
+    const fill = isIconActive ? "grey" : "white";
+    return (
+        <a
+            className="contact-icon"
+            href={link}
+            onMouseEnter={toggleIsIconActive}
+            onMouseLeave={toggleIsIconActive}
+            rel="noopener noreferrer"
+            target="_blank"
+        >
+            <SVGInline
+                alt={`Icon for ${name}`}
+                fill={fill}
+                svg={icon}
+            />
+        </a>
+    );
+};
 
 // PropTypes for a ContactIcon
 ContactIcon.propTypes = {
@@ -95,7 +77,7 @@ ContactIcon.propTypes = {
 
 function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div>© 2018 Shea Hunter Belsky</div>
             <div className="footer-icons">
                 {
@@ -107,7 +89,7 @@ function Footer() {
                     ))
                 }
             </div>
-        </div>
+        </footer>
     );
 }
 
