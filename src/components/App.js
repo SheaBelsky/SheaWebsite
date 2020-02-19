@@ -1,5 +1,5 @@
 // Node Module imports
-import React from "react";
+import React, { Fragment } from "react";
 import { createBrowserHistory } from "history";
 import propTypes from "prop-types";
 import {
@@ -89,7 +89,7 @@ SwitchContainer.propTypes = {
 function App() {
     return (
         <Router history={customHistory}>
-            <div>
+            <Fragment>
                 <Navigation />
                 <Route
                     render={({ location }) => (
@@ -106,7 +106,7 @@ function App() {
                         </ReactCSSTransitionReplace>
                     )}
                 />
-            </div>
+            </Fragment>
         </Router>
     );
 }

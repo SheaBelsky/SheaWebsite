@@ -29,7 +29,7 @@ MenuItem.propTypes = {
 
 function Navigation() {
     return (
-        <div className="nav">
+        <nav className="nav">
             <div className="nav-title-container">
                 <NavLink
                     activeClassName="ignore"
@@ -59,7 +59,7 @@ function Navigation() {
                     <img src={NewWindow} className="nav-new-window-icon" alt="New window icon" />
                 </a>
             </div>
-        </div>
+        </nav>
     );
 }
 

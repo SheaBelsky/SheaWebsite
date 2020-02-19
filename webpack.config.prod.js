@@ -20,7 +20,7 @@ const plugins = [
         },
     }),
     new SWPrecacheWebpackPlugin({
-        cacheId: "shea-belsky-website-1.3.0",
+        cacheId: "shea-belsky-website-1.3.1",
         dontCacheBustUrlsMatching: /\.\w{8}\./,
         filename: "js/service-worker.js",
         logger(message) {
@@ -107,18 +107,6 @@ module.exports = {
                         loader: "file-loader?limit=100000",
                         options: {
                             name: "img/[hash].[ext]",
-                        },
-                    },
-                    "img-loader",
-                ],
-            },
-            {
-                test: /headshot/i,
-                use: [
-                    {
-                        loader: "file-loader?limit=100000",
-                        options: {
-                            name: "img/[name].[ext]",
                         },
                     },
                     "img-loader",
