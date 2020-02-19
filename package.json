@@ -1,10 +1,11 @@
 {
   "name": "shea-belsky-website",
-  "version": "1.2.8",
+  "version": "1.3.1",
   "description": "Shea Belsky Portfolio",
   "scripts": {
-    "build": "npm run clean-docs && ./node_modules/.bin/webpack --config webpack.config.prod.js --progress",
-    "clean-docs": "rm -rf docs/js && rm -rf docs/img && rm -rf docs/css && echo 'docs folder cleaned'",
+    "build": "npm run clean-docs; ./node_modules/.bin/webpack --config webpack.config.prod.js --progress; npm run copy-headshot",
+    "clean-docs": "rm -rf docs/js; rm -rf docs/img; rm -rf docs/css; echo 'docs folder cleaned'",
+    "copy-headshot": "cp src/media/headshot.jpg docs/img/headshot.jpg",
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --progress"
   },
   "repository": {
