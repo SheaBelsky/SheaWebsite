@@ -9,6 +9,18 @@ import PageTemplate from "../includes/PageTemplate";
 // CSS
 import "../../styles/pages/work.less";
 
+// Icon imports
+import BRHIcon from "../../media/work/BRH.png";
+import CornellCISIcon from "../../media/work/CornellCIS.png";
+import DTIIcon from "../../media/work/DTI.png";
+import EzraIcon from "../../media/work/Ezra.png";
+import GoogleIcon from "../../media/work/Google.png";
+import ISSAIcon from "../../media/work/ISSA.png";
+import RapidIcon from "../../media/work/Rapid.png";
+import SDPBIcon from "../../media/work/SDPB.png";
+import WatsonIcon from "../../media/work/Watson.png";
+import WayfairIcon from "../../media/work/Wayfair.png";
+
 function WorkTile(props) {
     const {
         backgroundColor,
@@ -55,70 +67,70 @@ function Work() {
             <WorkTile
                 backgroundColor="#7D297F"
                 destination="/work/wayfair"
-                icon={require("../../media/work/Wayfair.png")}
+                icon={WayfairIcon}
                 title="Wayfair"
                 subtitle="Front-End Web Developer"
             />
             <WorkTile
                 backgroundColor="red"
                 destination="/work/ezra"
-                icon={require("../../media/work/Ezra.png")}
+                icon={EzraIcon}
                 title="Ezra Tech, LLC"
                 subtitle="Co-Founder, CTO, CIO"
             />
             <WorkTile
                 backgroundColor="#0057C8"
                 destination="/work/google"
-                icon={require("../../media/work/Google.png")}
+                icon={GoogleIcon}
                 title="Google"
                 subtitle="User Experience Engineer Intern"
             />
             <WorkTile
                 backgroundColor="#6F6F6F"
                 destination="/work/dti"
-                icon={require("../../media/work/DTI.png")}
+                icon={DTIIcon}
                 subtitle="Creator of 'Trends in Web Development', Developer Lead"
                 title="Cornell Design & Tech Initiative"
             />
             <WorkTile
                 backgroundColor="teal"
                 destination="/work/rapid"
-                icon={require("../../media/work/Rapid.png")}
+                icon={RapidIcon}
                 subtitle="Project: The Music Box"
                 title="INFO 4320: Rapid Prototyping"
             />
             <WorkTile
                 backgroundColor="cadetblue"
                 destination="/work/cis"
-                icon={require("../../media/work/CornellCIS.png")}
+                icon={CornellCISIcon}
                 subtitle="Undergraduate and Head Teaching Assistant"
                 title="Computing and Information Science"
             />
             <WorkTile
                 backgroundColor="black"
                 destination="/work/ibm"
-                icon={require("../../media/work/Watson.png")}
+                icon={WatsonIcon}
                 subtitle="Front-End Developer Intern"
                 title="IBM Watson"
             />
             <WorkTile
                 backgroundColor="navy"
                 destination="/work/issa"
-                icon={require("../../media/work/ISSA.png")}
+                icon={ISSAIcon}
                 subtitle="President and Co-President"
                 title="Information Science Student Association"
             />
             <WorkTile
                 backgroundColor="red"
                 destination="/work/brh"
-                icon={require("../../media/work/BRH.png")}
+                icon={BRHIcon}
                 subtitle="Web Team Lead, Volunteer Coordinator"
                 title="BigRed//Hacks"
             />
             <WorkTile
                 backgroundColor="tomato"
                 destination="/work/slopeday"
-                icon={require("../../media/work/SDPB.png")}
+                icon={SDPBIcon}
                 subtitle="Volunteer Director, Recrutment Director"
                 title="Slope Day Programming Board"
             />
