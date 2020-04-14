@@ -10,12 +10,16 @@ import "../../styles/pages/photography.less";
 
 const imageNames = ["AlanSki.jpg", "HoPlaza.jpg", "McGrawUris.jpg", "BaileyReflection.jpg", "HoliColor.jpg", "SlopeSunset.jpg", "Cascadilla.jpg", "HoliColor2.jpg", "SunriseFlorida.jpg", "CloudsHunter.jpg", "HunterPath.jpg", "SunriseHunter.jpg", "EzraStatue.jpg", "HunterSunrise.jpg", "IsraelStockExchange.jpg", "SunsetColorado.jpg", "Gates.jpg", "IsraelSunset.jpg", "WTC.jpg", "TreeSunset.jpg", "GatesGlass.jpg", "KirkLakeReflection.jpg", "HWUL.jpg", "McGrawCherry.jpg"];
 
-const images = imageNames.map(image => ({
-    src: require(`./../../media/photography/full/${image}`),
-    thumbnail: require(`./../../media/photography/thumb/${image}`),
-    thumbnailHeight: 200,
-    thumbnailWidth: 200,
-}));
+const images = imageNames.map((image) => {
+    const { default: defaultSrc } = require(`./../../media/photography/full/${image}`);
+    const { default: defaultThumb } = require(`./../../media/photography/full/${image}`);
+    return {
+        src: defaultSrc,
+        thumbnail: defaultThumb,
+        thumbnailHeight: 200,
+        thumbnailWidth: 200,
+    };
+});
 
 function Photography() {
     return (
