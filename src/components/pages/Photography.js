@@ -12,7 +12,7 @@ const imageNames = ["AlanSki.jpg", "HoPlaza.jpg", "McGrawUris.jpg", "BaileyRefle
 
 const images = imageNames.map((image) => {
     const { default: defaultSrc } = require(`./../../media/photography/full/${image}`);
-    const { default: defaultThumb } = require(`./../../media/photography/full/${image}`);
+    const { default: defaultThumb } = require(`./../../media/photography/thumb/${image}`);
     return {
         src: defaultSrc,
         thumbnail: defaultThumb,
