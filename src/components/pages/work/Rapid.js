@@ -1,6 +1,5 @@
 import React from "react";
 import Gallery from "react-grid-gallery";
-
 import PageTemplate from "../../includes/PageTemplate";
 
 const thumbnailHeight = 200;
@@ -8,12 +7,16 @@ const thumbnailWidth = 200;
 
 const imageNames = ["brainstorming.jpg", "part1_surface.jpg", "part1_surface2.jpg", "shape_prototype1.jpg", "shape_prototype2.jpg", "part2_prototype1.jpg", "final1.jpg", "final2.jpg", "poster.png", "schematic.png"];
 
-const images = imageNames.map(image => ({
-    src: require(`./../../../media/work/rapid/full/${image}`),
-    thumbnail: require(`./../../../media/work/rapid/thumb/${image}`),
-    thumbnailHeight,
-    thumbnailWidth,
-}));
+const images = imageNames.map((image) => {
+    const { default: defaultSrc } = require(`./../../../media/work/rapid/full/${image}`);
+    const { default: defaultThumb } = require(`./../../../media/work/rapid/thumb/${image}`);
+    return {
+        src: defaultSrc,
+        thumbnail: defaultThumb,
+        thumbnailHeight,
+        thumbnailWidth,
+    };
+});
 
 function Rapid() {
     return (
