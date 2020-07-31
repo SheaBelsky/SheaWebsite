@@ -16,6 +16,7 @@ import DTIIcon from "../../media/work/DTI.png";
 import EzraIcon from "../../media/work/Ezra.png";
 import GoogleIcon from "../../media/work/Google.png";
 import ISSAIcon from "../../media/work/ISSA.png";
+import MentraIcon from "../../media/work/Mentra.png";
 import RapidIcon from "../../media/work/Rapid.png";
 import SDPBIcon from "../../media/work/SDPB.png";
 import WatsonIcon from "../../media/work/Watson.png";
@@ -69,7 +70,14 @@ function Work() {
                 destination="/work/wayfair"
                 icon={WayfairIcon}
                 title="Wayfair"
-                subtitle="Front-End Web Developer"
+                subtitle="Engineer II, Tech Lead"
+            />
+            <WorkTile
+                backgroundColor="#6BD5FE"
+                destination="/work/mentra"
+                icon={MentraIcon}
+                subtitle="Tech Lead"
+                title="Mentra"
             />
             <WorkTile
                 backgroundColor="red"

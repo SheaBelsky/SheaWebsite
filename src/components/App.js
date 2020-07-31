@@ -23,13 +23,14 @@ import Ezra from "./pages/work/Ezra";
 import Google from "./pages/work/Google";
 import IBM from "./pages/work/IBM";
 import ISSA from "./pages/work/ISSA";
+import Mentra from "./pages/work/Mentra";
 import Rapid from "./pages/work/Rapid";
 import SDPB from "./pages/work/SDPB";
 import Wayfair from "./pages/work/Wayfair";
 
 // Require these files so Webpack outputs them
-require("./../media/favicon.ico");
-require("./../media/resume/Shea-H-Belsky-Resume.pdf");
+require("../media/favicon.ico");
+require("../media/resume/Shea-H-Belsky-Resume.pdf");
 
 // Easter egg
 const consoleCSS = "background:#476174;color:white;font-family:Arial;padding:5px 5px 5px 3px;border-radius:5px;line-height:20px;";
@@ -72,6 +73,7 @@ function SwitchContainer({ location }) {
             <Route exact path="/work/google" component={Google} /> {/* Google Page */}
             <Route exact path="/work/ibm" component={IBM} /> {/* IBM Page */}
             <Route exact path="/work/issa" component={ISSA} /> {/* ISSA Page */}
+            <Route exact path="/work/mentra" component={Mentra} /> {/* Mentra Page */}
             <Route exact path="/work/rapid" component={Rapid} /> {/* Rapid Prototyping Page */}
             <Route exact path="/work/slopeday" component={SDPB} /> {/* Rapid Prototyping Page */}
             <Route exact path="/work/wayfair" component={Wayfair} /> {/* Wayfair Page */}
