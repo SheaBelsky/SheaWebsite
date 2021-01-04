@@ -58,7 +58,7 @@ const ContactIcon = (props) => {
             target="_blank"
         >
             <SVGInline
-                alt={`Icon for ${name}`}
+                alt={name}
                 fill={fill}
                 svg={icon}
             />

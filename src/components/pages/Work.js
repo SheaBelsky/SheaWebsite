@@ -40,7 +40,7 @@ function WorkTile(props) {
             to={destination}
             style={tileStyles}
         >
-            <img alt={`Icon for ${title}`} src={icon} className="workTile__icon" />
+            <img alt={title} src={icon} className="workTile__icon" />
             <h2 className="workTile__title">
                 {title}
             </h2>
