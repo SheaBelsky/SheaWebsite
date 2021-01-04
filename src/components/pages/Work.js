@@ -10,6 +10,7 @@ import PageTemplate from "../includes/PageTemplate";
 import "../../styles/pages/work.less";
 
 // Icon imports
+import APCIcon from "../../media/work/APC.jpg";
 import BRHIcon from "../../media/work/BRH.png";
 import CornellCISIcon from "../../media/work/CornellCIS.png";
 import DTIIcon from "../../media/work/DTI.png";
@@ -66,6 +67,12 @@ function Work() {
             title="Work Experience"
         >
             <WorkTile
+                backgroundColor="#1d355e"
+                destination="/work/autism-stories"
+                icon={APCIcon}
+                title="Autism Stories"
+                subtitle="Featured on Podcast"
+            /><WorkTile
                 backgroundColor="#7D297F"
                 destination="/work/wayfair"
                 icon={WayfairIcon}

@@ -16,6 +16,7 @@ import Photography from "./pages/Photography";
 import Work from "./pages/Work";
 
 // Work pages
+import AutismStories from "./pages/work/AutismStories";
 import BRH from "./pages/work/BRH";
 import CIS from "./pages/work/CIS";
 import DTI from "./pages/work/DTI";
@@ -66,6 +67,7 @@ function SwitchContainer({ location }) {
             <Route exact path="/work" component={Work} />  {/* Work Page */}
 
             {/* Work Routes */}
+            <Route exact path="/work/autism-stories" component={AutismStories} /> {/* Autism Stories */}
             <Route exact path="/work/brh" component={BRH} /> {/* BigRed//Hacks Page */}
             <Route exact path="/work/cis" component={CIS} /> {/* Cornell CIS Page */}
             <Route exact path="/work/dti" component={DTI} /> {/* Cornell DTI Page */}
