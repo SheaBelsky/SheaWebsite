@@ -80,7 +80,7 @@ function Work() {
                 subtitle="Engineer II, Tech Lead"
             />
             <WorkTile
-                backgroundColor="#6BD5FE"
+                backgroundColor="#9840F5"
                 destination="/work/mentra"
                 icon={MentraIcon}
                 subtitle="Tech Lead"
