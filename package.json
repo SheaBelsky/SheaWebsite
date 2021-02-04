@@ -1,6 +1,6 @@
 {
   "name": "shea-belsky-website",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Shea Belsky Portfolio",
   "scripts": {
     "build": "npm run clean-docs; ./node_modules/.bin/webpack --config webpack.config.prod.js --progress; npm run copy-headshot",
