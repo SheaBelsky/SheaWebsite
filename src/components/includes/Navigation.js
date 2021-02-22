@@ -56,7 +56,7 @@ function Navigation() {
                     target="_blank"
                 >
                     Resume
-                    <img src={NewWindow} className="nav-new-window-icon" alt="New window icon" />
+                    <img alt="" src={NewWindow} className="nav-new-window-icon" />
                 </a>
             </div>
         </nav>

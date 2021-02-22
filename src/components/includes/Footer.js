@@ -50,6 +50,7 @@ const ContactIcon = (props) => {
     const fill = isIconActive ? "grey" : "white";
     return (
         <a
+            aria-label={name}
             className="contact-icon"
             href={link}
             onMouseEnter={toggleIsIconActive}
@@ -58,7 +59,7 @@ const ContactIcon = (props) => {
             target="_blank"
         >
             <SVGInline
-                alt={name}
+                alt=""
                 fill={fill}
                 svg={icon}
             />

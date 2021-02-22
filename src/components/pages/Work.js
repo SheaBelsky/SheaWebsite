@@ -40,7 +40,7 @@ function WorkTile(props) {
             to={destination}
             style={tileStyles}
         >
-            <img alt={title} src={icon} className="workTile__icon" />
+            <img alt="" src={icon} className="workTile__icon" />
             <h2 className="workTile__title">
                 {title}
             </h2>
@@ -72,7 +72,8 @@ function Work() {
                 icon={APCIcon}
                 title="Autism Stories"
                 subtitle="Featured on Podcast"
-            /><WorkTile
+            />
+            <WorkTile
                 backgroundColor="#7D297F"
                 destination="/work/wayfair"
                 icon={WayfairIcon}
