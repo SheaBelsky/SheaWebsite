@@ -10,7 +10,7 @@ function Wayfair() {
         >
             <section>
                 <h2>Engineer II</h2>
-                <h3>August 2020 - Present</h3>
+                <h3>August 2020 - June 2021</h3>
                 <p>
                     I am a member of the Stores and Geos team, which maintains and improves upon the experiences for Wayfair's Specialty Retail Brands and International stores. I work with different teams from across Wayfair in order to tailor each part of Wayfair's platform to the unique needs and expectations of each store. I collaborate heavily with product managers, experience designers & researchers, business intelligence, analytics, and QA to develop and execute upon projects that are specific to Wayfair's broad range of stores.
                 </p>
