@@ -2,21 +2,21 @@ import React from "react";
 
 import PageTemplate from "../../includes/PageTemplate";
 
-function AutismStories() {
+function HubSpot() {
     return (
         <PageTemplate
             className="work-page-container"
-            title="Hubspot"
+            title="HubSpot"
         >
             <section>
                 <h2>Senior Software Enginer I</h2>
                 <h3>June 2021 - Present</h3>
                 <p>
-                    I am member of the Social team, helping Hubspot's 113,000+ customers grow and maintain their social media presence.
+                    I currently work for HubSpot as a Senior Software Engineer I. I'm a frontend engineer for the Social team, connecting HubSpot's customers and companies with social media analytics and putting the power of social media at their fingertips.
                 </p>
             </section>
         </PageTemplate>
     );
 }
 
-export default AutismStories;
+export default HubSpot;

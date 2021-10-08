@@ -22,7 +22,7 @@ import CIS from "./pages/work/CIS";
 import DTI from "./pages/work/DTI";
 import Ezra from "./pages/work/Ezra";
 import Google from "./pages/work/Google";
-import Hubspot from "./pages/work/Hubspot";
+import HubSpot from "./pages/work/HubSpot";
 import IBM from "./pages/work/IBM";
 import ISSA from "./pages/work/ISSA";
 import Mentra from "./pages/work/Mentra";
@@ -74,7 +74,7 @@ function SwitchContainer({ location }) {
             <Route exact path="/work/dti" component={DTI} /> {/* Cornell DTI Page */}
             <Route exact path="/work/ezra" component={Ezra} /> {/* Ezra Page */}
             <Route exact path="/work/google" component={Google} /> {/* Google Page */}
-            <Route exact path="/work/hubspot" component={Hubspot} /> {/* Google Page */}
+            <Route exact path="/work/hubspot" component={HubSpot} /> {/* HubSpot Page */}
             <Route exact path="/work/ibm" component={IBM} /> {/* IBM Page */}
             <Route exact path="/work/issa" component={ISSA} /> {/* ISSA Page */}
             <Route exact path="/work/mentra" component={Mentra} /> {/* Mentra Page */}

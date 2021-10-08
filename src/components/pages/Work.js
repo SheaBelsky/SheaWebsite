@@ -16,7 +16,7 @@ import CornellCISIcon from "../../media/work/CornellCIS.png";
 import DTIIcon from "../../media/work/DTI.png";
 import EzraIcon from "../../media/work/Ezra.png";
 import GoogleIcon from "../../media/work/Google.png";
-import HubspotIcon from "../../media/work/Hubspot.png";
+import HubSpotIcon from "../../media/work/HubSpot.png";
 import ISSAIcon from "../../media/work/ISSA.png";
 import MentraIcon from "../../media/work/Mentra.png";
 import RapidIcon from "../../media/work/Rapid.png";
@@ -64,14 +64,13 @@ function Work() {
     return (
         <PageTemplate
             className="work-container"
-            subtitle="WORK WORK! Angelica..."
             title="Work Experience"
         >
             <WorkTile
                 backgroundColor="#393939"
                 destination="/work/hubspot"
-                icon={HubspotIcon}
-                title="Hubspot"
+                icon={HubSpotIcon}
+                title="HubSpot"
                 subtitle="Senior Software Engineer I"
             />
             <WorkTile
