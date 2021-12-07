@@ -30,6 +30,7 @@ MenuItem.propTypes = {
 function Navigation() {
     return (
         <nav className="nav">
+            <a className="skip-nav-link" href="#main">Skip to main content</a>
             <div className="nav-title-container">
                 <NavLink
                     activeClassName="ignore"

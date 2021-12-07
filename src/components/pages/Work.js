@@ -37,15 +37,16 @@ function WorkTile(props) {
     };
     return (
         <Link
+            aria-label={`${title}, ${subtitle}`}
             className="workTile"
             to={destination}
             style={tileStyles}
         >
-            <img alt="" src={icon} className="workTile__icon" />
-            <h2 className="workTile__title">
+            <img alt="" aria-hidden={true} src={icon} className="workTile__icon" />
+            <h2 aria-hidden={true} className="workTile__title">
                 {title}
             </h2>
-            <h3 className="workTile__subtitle">
+            <h3 aria-hidden={true} className="workTile__subtitle">
                 {subtitle}
             </h3>
         </Link>

@@ -33,14 +33,20 @@
             width: 100%;
         }
 
-        &:hover {
+        &:hover, &:focus {
             cursor: pointer;
+            outline: none;
+
+            h2, h3 {
+                text-decoration: underline;
+                text-decoration-color: white;
+            }
 
             .workTile__subtitle {
-                color: lighten(@subtitle-color, 40%);
+                color: lighten(@subtitle-color, 70%);
             }
             .workTile__title {
-                color: lighten(@title-color, 40%);
+                color: lighten(@title-color, 70%);
             }
         }
 

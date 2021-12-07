@@ -17,6 +17,7 @@ import Footer from "./Footer";
 const PageTemplate = (props) => {
     useEffect(() => {
         setTimeout(() => {
+            // eslint-disable-next-line no-undef
             window.scrollTo(0, 0);
         }, 600);
     }, []);
@@ -36,7 +37,7 @@ const PageTemplate = (props) => {
                     </h2>
                 )}
             </header>
-            <main className="page-content">
+            <main className="page-content" id="main">
                 {props.children}
             </main>
             <Footer />
