@@ -1,3 +1,7 @@
+# Old Website
+
+New website code can be found here: https://github.com/SheaBelsky/SheaWebsite2
+
 # React Portfolio
 
 Portfolio website for designers, developers, and everyone who just wants a cool website in React.
